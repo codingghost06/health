@@ -78,7 +78,17 @@ Only three components ship JavaScript to the browser: the header, the calculator
 
 Defined once in `src/app/globals.css` under `@theme` (Tailwind v4): brand blues, navy, teal accent, gold, neutrals, radii, tinted shadows, motion easing and keyframes. Fonts: **Cormorant Garamond** (display, 600/700) and **Outfit** (UI/body) via `next/font` with `display: swap`.
 
-## Deployment
+## Client preview on GitHub Pages
+
+GitHub Pages only serves static files, so a second build flavour exists for previews:
+
+```bash
+NEXT_PUBLIC_BASE_PATH=/health npm run build:pages   # → ./out
+```
+
+`scripts/build-pages.mjs` sets `DEPLOY_TARGET=github-pages` (static `output: "export"`, base path, trailing slashes), temporarily excludes the `/api/lead` route (Pages can't run it), and writes `.nojekyll`. In this flavour the lead form validates and then shows a "preview build — nothing was sent" notice, and every page carries `noindex` so the preview never competes with healthbilling.us in search. `.github/workflows/deploy-pages.yml` runs this on every push to `main` and publishes to `https://<owner>.github.io/<repo>/`.
+
+## Deployment (production)
 
 Any Node host works (Vercel, Netlify, Fly, Docker). Set the env variables above, then `npm run build && npm start`. The rate limiter is per-instance; on multi-instance serverless deployments treat it as best-effort and add Upstash/Redis if a global cap is needed.
 

@@ -8,7 +8,10 @@ import { site } from "@/content/site";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
 
-type Status = "idle" | "submitting" | "success" | "error";
+type Status = "idle" | "submitting" | "success" | "error" | "preview";
+
+/** Static preview builds (GitHub Pages) have no server, so the form can't send. */
+const IS_PREVIEW = process.env.NEXT_PUBLIC_DEPLOY_TARGET === "github-pages";
 
 const f = freeAuditPage.form;
 
@@ -93,6 +96,10 @@ export function LeadForm() {
       return;
     }
     setErrors({});
+    if (IS_PREVIEW) {
+      setStatus("preview");
+      return;
+    }
     setStatus("submitting");
     setServerMessage("");
     try {
@@ -115,6 +122,26 @@ export function LeadForm() {
       setStatus("error");
     }
   };
+
+  if (status === "preview") {
+    return (
+      <div role="status" className="rounded-2xl border border-gold-400/50 bg-gold-300/15 p-8 text-center sm:p-10">
+        <span className="mx-auto flex size-14 items-center justify-center rounded-full bg-white text-gold-500 shadow-card">
+          <Icon name="eye" className="size-7" strokeWidth={2} />
+        </span>
+        <h3 className="mt-5 font-display text-[1.75rem] text-navy-900">Preview build — nothing was sent</h3>
+        <p className="mx-auto mt-2 max-w-md text-[15px] leading-relaxed text-slate-600">
+          Your details validated correctly. On the live site this request is emailed to{" "}
+          <strong className="text-navy-900">{site.leadInbox}</strong> and a specialist follows up within 4 business hours.
+        </p>
+        <div className="mt-6">
+          <Button variant="link" onClick={() => setStatus("idle")}>
+            Back to the form
+          </Button>
+        </div>
+      </div>
+    );
+  }
 
   if (status === "success") {
     return (

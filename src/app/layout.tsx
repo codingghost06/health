@@ -30,7 +30,11 @@ export const metadata: Metadata = {
   description: site.description,
   applicationName: site.name,
   authors: [{ name: site.name }],
-  robots: { index: true, follow: true },
+  // Static preview builds (GitHub Pages) must not be indexed; the real domain is canonical.
+  robots:
+    process.env.NEXT_PUBLIC_DEPLOY_TARGET === "github-pages"
+      ? { index: false, follow: false }
+      : { index: true, follow: true },
   openGraph: {
     type: "website",
     siteName: site.name,

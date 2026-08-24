@@ -2,6 +2,9 @@ import type { MetadataRoute } from "next";
 import { services } from "@/content/services";
 import { routes, site } from "@/content/site";
 
+// Generated at build time (required for static export).
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
   const staticPaths: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
