@@ -1,0 +1,222 @@
+import type { InnerPage } from "@/content/types";
+import { routes } from "@/content/site";
+
+export const payersPage: InnerPage = {
+  slug: "payers",
+  path: routes.payers,
+  meta: {
+    title: "We Bill Every Major Insurance Payer in America",
+    description:
+      "Medicare. Medicaid. Every private insurer. Every managed care plan. Health Billing is credentialed, contracted, and actively billing with 500+ payers across all 50 states.",
+  },
+  hero: {
+    breadcrumb: [{ label: "Home", href: routes.home }],
+    title: ["We Bill Every Major Insurance", "Payer in America"],
+    lead: "Medicare. Medicaid. Every private insurer. Every managed care plan. Health Billing is credentialed, contracted, and actively billing with 500+ payers across all 50 states — so your providers get paid no matter who the patient's insurer is.",
+    stats: [
+      { value: "500+", label: "Payers in network" },
+      { value: "50", label: "States covered" },
+      { value: "100%", label: "Government payer compliant" },
+      { value: "28 days", label: "Avg enrollment time" },
+    ],
+  },
+  blocks: [
+    {
+      type: "cards",
+      id: "government",
+      eyebrow: "Government Payers",
+      title: "Medicare & Medicaid — Done Right, Every Time",
+      lead: "Medicare and Medicaid are America's largest healthcare payers — and also the most complex to bill. Our government billing specialists handle it all with precision and full compliance.",
+      columns: 3,
+      variant: "default",
+      items: [
+        {
+          icon: "landmark",
+          title: "Medicare",
+          sub: "CMS / Federal Program",
+          bullets: [
+            "Part A — inpatient, SNF, hospice",
+            "Part B — physician, outpatient, DME",
+            "Part C — Medicare Advantage (all plans)",
+            "Part D — pharmacy coordination",
+            "MIPS / QPP compliance & reporting",
+            "MSP coordination",
+            "RAC, MAC, OIG audit defense",
+            "LCD/NCD policy compliance",
+          ],
+        },
+        {
+          icon: "hospital",
+          title: "Medicaid",
+          sub: "All 50 State Programs",
+          bullets: [
+            "All 50 state Medicaid programs",
+            "Medicaid MCOs and managed care",
+            "CHIP (Children's Health Insurance)",
+            "Dual-eligible (Medicare + Medicaid)",
+            "FQHC billing",
+            "Behavioral health Medicaid",
+            "LTSS and waiver programs",
+          ],
+        },
+        {
+          icon: "scale",
+          title: "Other Government",
+          sub: "Federal & State Programs",
+          bullets: [
+            "TRICARE / CHAMPVA",
+            "VA Community Care Network",
+            "Federal Employee Health Benefits (FEHB)",
+            "Workers' Compensation (all 50 states)",
+            "Auto / No-Fault billing",
+            "Indian Health Service (IHS)",
+            "Ryan White HIV/AIDS program",
+          ],
+        },
+      ],
+    },
+    {
+      type: "cards",
+      id: "commercial",
+      eyebrow: "Major Commercial Insurers",
+      title: "Every Private Insurer. Every Plan. We Handle Them All.",
+      lead: "Commercial payers each have unique billing rules, fee schedules, auth requirements, and claim formats. Our payer-specific billing teams know the nuances of every major insurer.",
+      columns: 3,
+      variant: "default",
+      items: [
+        {
+          id: "bcbs",
+          monogram: "BCBS",
+          title: "Blue Cross Blue Shield",
+          sub: "All 36 BCBS Regional Plans",
+          body: "We bill all 36 independent BCBS plans — from Anthem and BCBS of Illinois to Hawaii and Montana — with plan-specific fee schedules and claim requirements applied.",
+        },
+        {
+          id: "aetna",
+          monogram: "AET",
+          title: "Aetna / CVS Health",
+          sub: "Commercial, Medicare Advantage & Medicaid",
+          body: "Full Aetna billing including commercial PPO/HMO, Medicare Advantage, and Medicaid managed care plans — with proper modifier and bundling rules applied.",
+        },
+        {
+          id: "unitedhealthcare",
+          monogram: "UHC",
+          title: "UnitedHealthcare",
+          sub: "UHC / UnitedHealth Group / Optum",
+          body: "America's largest insurer requires specialized knowledge. We navigate UHC's portal, authorization requirements, and reimbursement policies for maximum collections.",
+        },
+        {
+          id: "cigna",
+          monogram: "CIG",
+          title: "Cigna / Evernorth",
+          sub: "Commercial & Medicare Advantage",
+          body: "Cigna billing across commercial, Medicare Advantage, behavioral health, and pharmacy benefit plans — including reference-based pricing arrangements.",
+        },
+        {
+          id: "humana",
+          monogram: "HUM",
+          title: "Humana",
+          sub: "Medicare Advantage, Commercial & Medicaid",
+          body: "One of America's top Medicare Advantage payers. We handle Humana's authorization workflows, HEDIS quality reporting, and star rating optimization alongside billing.",
+        },
+        {
+          id: "centene",
+          monogram: "CNT",
+          title: "Centene Corporation",
+          sub: "Medicaid, Medicare & ACA Plans",
+          body: "The largest Medicaid managed care organization in the US. Centene's brands include WellCare, Health Net, Ambetter, and Fidelis — we bill them all.",
+        },
+        {
+          id: "anthem",
+          monogram: "ANT",
+          title: "Anthem / Elevance Health",
+          sub: "14 States — Commercial, MA & Medicaid",
+          body: "The largest BCBS licensee. We manage Anthem/Elevance commercial, Medicaid, and Medicare Advantage billing across all 14 Anthem-affiliated states.",
+        },
+        {
+          id: "molina",
+          monogram: "MOL",
+          title: "Molina Healthcare",
+          sub: "Medicaid & Medicare — 19 States",
+          body: "A leading managed Medicaid payer in 19 states. We navigate Molina's state-specific billing requirements and ensure proper claim adjudication and appeals.",
+        },
+        {
+          id: "kaiser",
+          monogram: "KAI",
+          title: "Kaiser Permanente",
+          sub: "Commercial & Medicare Plans",
+          body: "Kaiser's closed-network model requires specialized non-member billing workflows. We handle commercial and out-of-network Kaiser claims with full documentation support.",
+        },
+        {
+          id: "more",
+          monogram: "+400",
+          title: "400+ More Payers",
+          sub: "Regional, Specialty & Niche Plans",
+          body: "Oscar Health, Bright Health, Clover, Devoted Health, SelectHealth, Independence Blue Cross, Geisinger, CHRISTUS, Scott & White, and hundreds more regional plans.",
+        },
+      ],
+    },
+    {
+      type: "cards",
+      id: "specialty-programs",
+      eyebrow: "Specialty Insurance Programs",
+      title: "Beyond Standard Insurance — We Handle All of It",
+      columns: 3,
+      variant: "accent",
+      items: [
+        {
+          icon: "car",
+          title: "Auto / No-Fault",
+          body: "MVA billing with proper lien management, attorney coordination, and no-fault payer follow-up across all no-fault states.",
+        },
+        {
+          icon: "hard-hat",
+          title: "Workers' Compensation",
+          body: "State-by-state workers' comp billing, fee schedule compliance, utilization review responses, and IME documentation support.",
+        },
+        {
+          icon: "shield",
+          title: "TRICARE / Veterans",
+          body: "TRICARE West, East, For Life, and VA Community Care Network — all authorization types and billing configurations covered.",
+        },
+        {
+          icon: "building",
+          title: "Employer Self-Funded Plans",
+          body: "TPA and employer-sponsored self-funded plan billing — including reference-based pricing and direct contracting models.",
+        },
+        {
+          icon: "clipboard",
+          title: "Self-Pay & Uninsured",
+          body: "Charity care screening, sliding-scale fee management, financial counseling, and compassionate patient payment administration.",
+        },
+        {
+          icon: "globe",
+          title: "International / Travel",
+          body: "International traveler and expat insurance billing — including proper documentation for foreign insurance reimbursement claims.",
+        },
+      ],
+    },
+    {
+      type: "band",
+      title: "Not Yet Credentialed with a Payer?",
+      lead: "We don't just bill these insurers — we get your providers enrolled with every payer that matters to your practice. Average enrollment: 28 days.",
+      buttons: [
+        {
+          label: "Learn About Credentialing",
+          href: "/services/provider-credentialing",
+          variant: "primary",
+        },
+        {
+          label: "Get a Free Payer Enrollment Assessment",
+          href: routes.freeAudit,
+          variant: "ghost",
+        },
+      ],
+    },
+  ],
+  cta: {
+    title: "Every Payer. Every State. Every Claim Paid.",
+    lead: "No matter who insures your patients, we make sure you get paid — correctly, compliantly, and on time.",
+    button: { label: "Request Free Billing Assessment", href: routes.freeAudit },
+  },
+};

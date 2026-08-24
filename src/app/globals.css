@@ -1,0 +1,290 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/* Design tokens                                                        */
+/* ------------------------------------------------------------------ */
+@theme {
+  /* Brand blues (refined from the reference #1565C0 family) */
+  --color-brand-50: #f2f7fd;
+  --color-brand-100: #e3eefb;
+  --color-brand-200: #c5dbf5;
+  --color-brand-300: #93bdeb;
+  --color-brand-400: #4f93dc;
+  --color-brand-500: #1e7be0;
+  --color-brand-600: #1565c0;
+  --color-brand-700: #10529c;
+  --color-brand-800: #0f427c;
+  --color-brand-900: #0f3562;
+
+  /* Navy — heroes, footer, headings */
+  --color-navy-700: #163b66;
+  --color-navy-800: #0f2a4c;
+  --color-navy-900: #0b1f3a;
+  --color-navy-950: #07152a;
+
+  /* Teal accent — success, secondary emphasis */
+  --color-teal-50: #e6f5f3;
+  --color-teal-100: #cceae6;
+  --color-teal-500: #10a394;
+  --color-teal-600: #0e8c7f;
+  --color-teal-700: #0b7267;
+
+  /* Gold — hero badge, stars */
+  --color-gold-300: #f0dc8c;
+  --color-gold-400: #e2c35a;
+  --color-gold-500: #c9a227;
+
+  /* Neutrals */
+  --color-ink: #152130;
+  --color-slate-500: #5c6f82;
+  --color-slate-600: #4e6275;
+  --color-slate-700: #3a4c5e;
+  --color-line: #e1e8f0;
+  --color-line-strong: #cfd9e4;
+  --color-surface: #f6f9fc;
+  --color-surface-2: #eef3f8;
+
+  --color-danger-600: #c62828;
+  --color-danger-50: #fdecea;
+  --color-success-700: #047857;
+  --color-success-50: #e6f6ef;
+
+  /* Typography */
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, "Times New Roman", serif;
+
+  /* Radii */
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.375rem;
+  --radius-2xl: 1.75rem;
+
+  /* Shadows (tinted with brand blue) */
+  --shadow-card: 0 1px 2px rgba(15, 42, 76, 0.04), 0 2px 12px rgba(21, 101, 192, 0.06);
+  --shadow-card-hover: 0 6px 24px rgba(21, 101, 192, 0.12), 0 2px 6px rgba(15, 42, 76, 0.06);
+  --shadow-float: 0 12px 40px rgba(11, 31, 58, 0.14);
+  --shadow-glow: 0 10px 36px rgba(30, 123, 224, 0.35);
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Keyframes */
+  --animate-fade-up: fade-up 0.7s var(--ease-out-expo) both;
+  --animate-fade-in: fade-in 0.6s ease-out both;
+  --animate-grow-bar: grow-bar 1.1s var(--ease-out-expo) both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes grow-bar {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                 */
+/* ------------------------------------------------------------------ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    /* Room for the sticky header when jumping to #anchors */
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+    font-size: 1rem;
+    line-height: 1.65;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-brand-500) 22%, white);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-navy-900;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Visible, consistent focus rings for keyboard users only */
+  :focus-visible {
+    outline: 2px solid var(--color-brand-500);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Utilities                                                            */
+/* ------------------------------------------------------------------ */
+@utility text-balance {
+  text-wrap: balance;
+}
+
+/* Display headings: Cormorant needs heavier weight + tighter tracking */
+@utility font-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.08;
+}
+
+/* Subtle grid texture for dark heroes */
+@utility bg-grid-dark {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+/* Hero gradients */
+@utility bg-hero {
+  background-image:
+    radial-gradient(70% 90% at 85% 10%, rgba(30, 123, 224, 0.55) 0%, transparent 60%),
+    radial-gradient(50% 70% at 10% 95%, rgba(14, 140, 127, 0.35) 0%, transparent 60%),
+    linear-gradient(135deg, #0b1f3a 0%, #0f2f57 55%, #124c8f 100%);
+}
+
+@utility bg-cta {
+  background-image:
+    radial-gradient(60% 100% at 100% 0%, rgba(14, 140, 127, 0.5) 0%, transparent 60%),
+    linear-gradient(120deg, #0f3562 0%, #1565c0 55%, #10a394 130%);
+}
+
+/* Gradient word in hero */
+@utility text-gradient-gold {
+  background-image: linear-gradient(120deg, #9ad7ff 0%, #f0dc8c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Stagger helpers for hero entrance */
+@utility delay-1 {
+  animation-delay: 80ms;
+}
+@utility delay-2 {
+  animation-delay: 160ms;
+}
+@utility delay-3 {
+  animation-delay: 240ms;
+}
+@utility delay-4 {
+  animation-delay: 320ms;
+}
+
+/* Native <details> accordion polish */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Number inputs: hide spinners (we show units instead) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Range slider */
+input[type="range"].slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    var(--color-brand-600) 0%,
+    var(--color-brand-600) var(--fill, 0%),
+    var(--color-line-strong) var(--fill, 0%),
+    var(--color-line-strong) 100%
+  );
+  outline: none;
+}
+input[type="range"].slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid var(--color-brand-600);
+  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.35);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+input[type="range"].slider::-webkit-slider-thumb:hover {
+  transform: scale(1.08);
+}
+input[type="range"].slider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid var(--color-brand-600);
+  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.35);
+  cursor: pointer;
+}
+input[type="range"].slider:focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 6px;
+}
+
+/* Metric bars: grow as they scroll into view (scroll-driven animation),
+   fall back to static full bars where unsupported. Zero JavaScript. */
+@supports (animation-timeline: view()) {
+  .metric-fill {
+    animation: grow-bar 1s var(--ease-out-expo) both;
+    animation-timeline: view();
+    animation-range: entry 10% entry 60%;
+  }
+}

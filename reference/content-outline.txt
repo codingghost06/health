@@ -1,0 +1,843 @@
+Health BillingAmerica's Revenue Experts
+ - <a href=None onclick=go('home')>Home
+ - <a href=None onclick=go('services')>Services <a href=None onclick=go('billing')>💳 Medical BillingEnd-to-end claim lifecycle <a href=None onclick=go('coding')>🧬 Medical CodingCPT, ICD-10, HCPCS, modifiers <a href=None onclick=go('rcm')>🔄 Revenue Cycle MgmtFront-to-back RCM <a href=None onclick=go('credentialing')>📋 CredentialingPayer enrollment & CAQH <a href=None onclick=go('denials')>🛡️ Denial ManagementRoot-cause + appeals <a href=None onclick=go('ar')>💰 AR RecoveryAged AR clean-up <a href=None onclick=go('transcription')>🎙️ TranscriptionMedical transcription <a href=None onclick=go('claims')>📨 Claims SubmissionClean-claim submission <a href=None onclick=go('insuranceCollections')>🏦 Payer CollectionsPayer-specific recovery <a href=None onclick=go('departments')>🏢 DepartmentsInside our operations <a href=None onclick=go('payers')>​📑 Insurance Payers500+ payer network <a href=None onclick=go('services')>➕ All ServicesBrowse the full catalogNot sure what you need? <a href=None onclick=go('contact')>Get a free audit →
+ - <a href=None onclick=go('specialties')>Specialties <a href=None onclick=go('specialties')>🫀 Cardiology <a href=None onclick=go('specialties')>🦴 Orthopedics <a href=None onclick=go('specialties')>🧠 Neurology <a href=None onclick=go('specialties')>🧬 Oncology <a href=None onclick=go('specialties')>🩺 Primary Care <a href=None onclick=go('specialties')>⚡ Urgent Care <a href=None onclick=go('specialties')>🧘 Behavioral Health <a href=None onclick=go('specialties')>📡 Radiology <a href=None onclick=go('specialties')>🔬 Pathology & Labs <a href=None onclick=go('specialties')>🌸 OB/GYN <a href=None onclick=go('specialties')>👶 Pediatrics <a href=None onclick=go('specialties')>🚨 Emergency Medicine <a href=None onclick=go('specialties')>🌙 Anesthesiology <a href=None onclick=go('specialties')>💊 Pain Management <a href=None onclick=go('specialties')>🫘 Nephrology40+ specialties supported <a href=None onclick=go('specialties')>View all specialties →
+ - <a href=None onclick=go('calculator')>Calculator
+ - <a href=None onclick=go('resources')>Resources <a href=None onclick=go('resources')>📝 BlogBilling insights & industry updates <a href=None onclick=go('resources')>📊 Case StudiesReal revenue lifts from real practices <a href=None onclick=go('resources')>📘 Guides & WhitepapersDeep-dive playbooks for practices <a href=None onclick=go('resources')>❓ FAQDoctor-focused answers <a href=None onclick=go('resources')>📰 NewsletterMonthly RCM brief
+ - <a href=None onclick=go('contact')>Free Audit <button onclick=toggleNav() type=None>
+
+########## PAGE #home (class='pg on')
+ <section id=None class='hero'>🏆 America's #1 Medical Billing Partner
+ [h1] Health Billing — Medical Billing & Revenue Cycle Management. Stop Losing Revenue. / Start Getting Paid / What You Deserve.
+ Health Billing delivers end-to-end medical billing, RCM, credentialing, and denial management for physicians, hospitals, labs, and clinics across all 50 states — Medicare, Medicaid, and every private insurer. <button onclick=go('contact') type=None>Get a Free Revenue Audit <button onclick=go('services') type=None>Explore Services98.2%First-pass claim rate$2.4B+Revenue recovered yearly4,800+Providers served<24hrClaim submission SLAWe bill:🏛️ Medicare🏥 MedicaidBlue Cross Blue ShieldAetnaUnitedHealthcareCignaHumanaMolinaCenteneAnthemTRICARE+ 490 more →
+ <section id=None class='section'>Our Services
+ [h2] Complete Revenue Cycle Coverage / Under One Roof
+ Every service your practice needs — from charge capture to final payment — managed with precision and full transparency.💊
+ [h3] Medical Billing
+ Full-cycle billing for every specialty. 24-hour submission. Every claim tracked to payment or resolution.Learn more →🔢
+ [h3] Medical Coding
+ CPC-certified coders across 40+ specialties. ICD-10, CPT, HCPCS — accurate, audit-ready, and reimbursement-maximized.Learn more →🔄
+ [h3] Revenue Cycle Management
+ End-to-end RCM strategy and operations. Reduce AR days, cut denial rates, and grow net collections by up to 34%.Learn more →📜
+ [h3] Provider Credentialing
+ Fast enrollment with Medicare, Medicaid, and all 500+ commercial payers. Average completion: 28 days.Learn more →🛡️
+ [h3] Denial Management
+ 93.4% denial resolution rate. We appeal every recoverable dollar — including claims your current team has written off.Learn more →📊
+ [h3] AR Recovery
+ Aging AR worked aggressively. 60, 90, 120+ day buckets cleared. 87% recovery rate on 90+ day balances.Learn more →🎙️
+ [h3] Medical Transcription
+ 99.5% accuracy. HIPAA-secure. Direct EHR delivery. STAT 4-hour and standard 24-hour turnaround options.Learn more →📨
+ [h3] Claims Management
+ 3,000+ claim edits. Real-time tracking. Zero-lag rejection response. Every claim managed to resolution.Learn more →📋
+ [h3] Payment Posting & Reconciliation
+ Daily ERA/EOB posting. Variance identification. Underpayment recovery. Zero revenue leakage.Get started →
+ <section id=None class='section bg-surface'>Why Health Billing
+ [h2] We Don't Just File Claims. / We Fight for Every Dollar.
+ Most billing companies submit and move on. We track, appeal, and recover — until every collectible dollar reaches your account.✓Specialty-Specific Billing TeamsDedicated coders and billers for each specialty — cardiology, orthopedics, nephrology, behavioral health, and 35+ more.✓AI-Assisted, Human-VerifiedTechnology catches errors before submission. Certified coders verify every claim. Result: 98.2% first-pass acceptance rate.✓Real-Time Dashboards & ReportingYou see exactly where every dollar is — always. Monthly KPI reports, payer-level breakdowns, and one dedicated account manager.✓No Contracts. No Hidden Fees.Performance-based pricing. We earn your business every month by delivering results — not by locking you in.
+ <div id=metricsStack class='metrics-stack'>Clean Claim Rate98.2%vs. industry avg: 82%Denial Resolution Rate93.4%vs. industry avg: 63%Days in AR18 Daysvs. industry avg: 38 daysRevenue Increase After Onboarding+34%Average within 90 days
+ <section id=None class='section'>Who We Serve
+ [h2] Billing Expertise Across / Every Healthcare Specialty
+ From solo practitioners to health systems — specialty-trained teams for every service line.🫀
+ [h4] Cardiology🦴
+ [h4] Orthopedics🧠
+ [h4] Neurology🫘
+ [h4] Nephrology🧬
+ [h4] Oncology🩺
+ [h4] Primary Care⚡
+ [h4] Urgent Care🧘
+ [h4] Behavioral Health📡
+ [h4] Radiology🔬
+ [h4] Pathology & Labs🫁
+ [h4] Pulmonology🩸
+ [h4] Gastroenterology👁️
+ [h4] Ophthalmology🌸
+ [h4] OB/GYN👶
+ [h4] Pediatrics🏥
+ [h4] Hospital Medicine🚨
+ [h4] Emergency Medicine🌙
+ [h4] Anesthesiology💊
+ [h4] Pain Management+ More
+ [h4] 40+ Specialties <button onclick=go('specialties') type=None>View All Specialties →
+ <section id=None class='section bg-surface'>Our Process
+ [h2] Up and Running in 5 Business Days
+ Fast onboarding. Zero disruption. Immediate performance improvements from day one.1
+ [h4] Free Revenue Audit
+ We assess your current billing performance, identify leakage, and benchmark KPIs against specialty norms.2
+ [h4] Onboarding & Integration
+ Seamless EHR integration in 5 business days. Zero disruption to your existing workflow.3
+ [h4] Billing & Collections
+ Claims submitted within 24 hours. Real-time tracking. Active follow-up on every open balance.4
+ [h4] Optimize & Report
+ Monthly KPI reviews, denial trend analysis, and continuous improvement recommendations.
+ <section id=None class='section'>Client Results
+ [h2] 4,800+ Providers Trust Health Billing★★★★★
+ Switching to Health Billing was the best operational decision we made. Collections jumped 42% in the first quarter, and AR days dropped from 52 to 19. Responsive, knowledgeable, and genuinely invested in our success.Dr. Michael Reynolds, MDCardiologist — Atlanta, Georgia★★★★★
+ Their denial management alone recovered over $380,000 in revenue we had already written off. We tried three billing companies before Health Billing. None came close. The ROI is extraordinary.Lisa Tran, Practice AdministratorOrthopedic Group — Dallas, Texas★★★★★
+ Their credentialing team got us enrolled with 14 payers in under 6 weeks. That's unheard of. Revenue has more than doubled since partnering with Health Billing — I wish we'd switched sooner.Dr. Amara Osei, DOFamily Medicine — Chicago, Illinois★★★★★
+ We run a 9-provider behavioral health practice and our prior biller couldn't keep up with payer rules. Health Billing's coders know psych CPT inside-out — clean-claim rate went from 71% to 98% and our reimbursements per session climbed 19%.Dr. Priya Raman, PsyDBehavioral Health Group — Seattle, Washington★★★★★
+ As a 3-location urgent care, our AR was a nightmare — over $620K aged past 90 days. Their AR recovery team worked every single claim. We collected $478K in four months on balances we'd basically given up on.Marcus Whitfield, CFOUrgent Care Network — Phoenix, Arizona★★★★★
+ Solo nephrology practice here — I needed a billing partner who actually understood dialysis MCP billing and CKD coding. Health Billing nailed it from day one. Monthly reports are clear, my dedicated account manager picks up the phone, and revenue is up 31%.Dr. Elena Vasquez, MDNephrology — Miami, Florida
+ [h2] Ready to Recover Revenue You're Currently Losing?
+ Schedule a free, no-obligation revenue audit. We'll identify exactly where your billing is falling short — and show you the number. <button onclick=go('contact') type=None>Book Your Free Revenue Audit →Health BillingAmerica's Revenue Experts
+ America's most trusted medical billing and revenue cycle management company. Serving 4,800+ physicians, hospitals, labs, and clinics in all 50 states.📞 <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721✉ <a href=mailto:hello@healthbilling.us onclick=None>hello@healthbilling.us📍97 Newkirk Street, Jersey City, NJ 07306
+ [h5] Services
+ - <a href=None onclick=go('billing')>Medical Billing
+ - <a href=None onclick=go('coding')>Medical Coding
+ - <a href=None onclick=go('rcm')>RCM
+ - <a href=None onclick=go('credentialing')>Credentialing
+ - <a href=None onclick=go('denials')>Denial Management
+ - <a href=None onclick=go('ar')>AR Recovery
+ - <a href=None onclick=go('transcription')>Transcription
+ - <a href=None onclick=go('claims')>Claims Management
+ [h5] Specialties
+ - <a href=None onclick=go('specialties')>All 40+ Specialties
+ - <a href=None onclick=go('specialties')>Nephrology
+ - <a href=None onclick=go('specialties')>Cardiology
+ - <a href=None onclick=go('specialties')>Behavioral Health
+ - <a href=None onclick=go('specialties')>Urgent Care
+ - <a href=None onclick=go('specialties')>Oncology
+ - <a href=None onclick=go('specialties')>Radiology
+ - <a href=None onclick=go('specialties')>Hospital Medicine
+ [h5] Payers
+ - <a href=None onclick=go('payers')>Medicare & Medicaid
+ - <a href=None onclick=go('payers')>Blue Cross Blue Shield
+ - <a href=None onclick=go('payers')>Aetna
+ - <a href=None onclick=go('payers')>UnitedHealthcare
+ - <a href=None onclick=go('payers')>Cigna
+ - <a href=None onclick=go('payers')>Humana
+ - <a href=None onclick=go('payers')>All 500+ Payers
+ - <a href=None onclick=go('contact')>Free Audit© 2025 Health Billing LLC. All rights reserved. | 97 Newkirk Street, Jersey City, NJ 07306 | +1 (415) 939-6721HIPAASOC 2HFMAAAPC
+
+########## PAGE #services (class='pg')
+ <section id=None class='svc-hero'>← Home
+ [h2] Complete Revenue Cycle Services
+ Every service your practice needs to maximize collections, cut denials, and stay compliant — all from one dedicated team.
+ <section id=None class='content-section'>💊
+ [h3] Medical Billing
+ Full-service billing from charge capture to payment posting. All payers, all specialties, 24-hour submission SLA.View Service →🔢
+ [h3] Medical Coding
+ CPC & CCS-certified coders. ICD-10-CM, CPT, HCPCS. Outpatient, inpatient, surgical, E&M across 40+ specialties.View Service →🔄
+ [h3] Revenue Cycle Management
+ Strategic end-to-end RCM — from patient access through zero-balance resolution. Average +34% net revenue uplift.View Service →📜
+ [h3] Provider Credentialing
+ Medicare, Medicaid, and all 500+ commercial payer enrollment. Average 28-day completion. CAQH managed.View Service →🛡️
+ [h3] Denial Management
+ Root-cause analysis, appeal writing, and re-submission. 93.4% resolution rate. No denied claim left unworked.View Service →📊
+ [h3] AR Recovery
+ Aggressive 60/90/120+ day bucket follow-up. 87% recovery rate on aged balances. No cherry-picking.View Service →📨
+ [h3] Claims Management
+ 3,000+ payer-specific edits. Real-time status tracking. Same-day rejection correction. Zero claims falling through the cracks.View Service →🎙️
+ [h3] Medical Transcription
+ 99.5%+ accuracy. HIPAA-secure. Direct EHR integration. STAT 4-hour turnaround available.View Service →🔏
+ [h3] Compliance & Audit Support
+ Internal coding audits, HIPAA risk assessments, OIG compliance programs, and documentation quality reviews.Contact Us →
+ [h2] Not Sure Where to Start?
+ Let our specialists run a free assessment of your current billing — we'll show you exactly what's leaking and how to fix it. <button onclick=go('contact') type=None>Request Free Assessment →© 2025 Health Billing LLC | 97 Newkirk Street, Jersey City, NJ 07306 | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | ← Home
+
+########## PAGE #billing (class='pg')
+ <section id=None class='svc-hero'>← Home / Services
+ [h2] Medical Billing Services / for Every Specialty
+ Precise, compliant billing submitted within 24 hours, tracked in real-time, and followed up until every claim is paid in full.98.2%First-pass acceptance<24hrClaim submission18 daysAverage AR days40+Specialties covered
+ <section id=None class='content-section'>What We Do
+ [h2] Medical Billing That Works / As Hard As You Do
+ Most practices lose 10–20% of collectible revenue to billing errors, missed follow-up, and denied claims that never get appealed. We eliminate those losses.
+ - Complete charge capture review and CDM analysis
+ - Real-time insurance eligibility verification before each visit
+ - Automated claim scrubbing with 3,000+ built-in edits
+ - Electronic and paper claim submission to all payers
+ - ERA/EOB posting with variance analysis
+ - Patient statement generation and follow-up
+ - Secondary and tertiary billing management
+ - Workers' compensation and no-fault billing
+ - Monthly performance analytics with physician-level breakdowns
+ [h4] Charge Capture & Review
+ Superbills and encounter notes reviewed for completeness and modifier accuracy before any claim is created.
+ [h4] Eligibility Verification
+ Coverage verified for every patient — benefits, deductibles, authorizations, and coordination of benefits.
+ [h4] Coding Validation
+ Certified coders review all diagnosis and procedure codes for accuracy, specificity, and payer policy compliance.
+ [h4] Claim Scrubbing & Submission
+ 3,000+ edit scrub, then transmitted electronically within 24 hours. Paper claims same business day.
+ [h4] Follow-Up & Appeals
+ Every open claim actively followed up. Denials appealed within 24–72 hours with full documentation.
+ [h4] Payment Posting & Reporting
+ ERAs processed daily. Variances resolved. Monthly financial reports with full collections transparency.
+ [h2] The Health Billing Advantage⚡
+ [h4] 24-Hour Submission
+ Claims submitted within one business day of receiving encounter documentation — always.🔍
+ [h4] 3,000+ Claim Edits
+ Proprietary scrubbing maintains our 98.2% first-pass acceptance rate.🏥
+ [h4] All Payers Covered
+ Medicare, Medicaid, all commercial payers, specialty plans — all 50 states.📈
+ [h4] +34% Revenue Uplift
+ Average clients see 20–40% revenue improvement within 90 days of switching.🔒
+ [h4] HIPAA + SOC 2
+ Full BAA available. SOC 2 Type II certified. Your patient data is protected.🤝
+ [h4] Dedicated Manager
+ One contact who knows your practice, payers, and performance benchmarks.For Physicians & Practice Owners
+ [h2] Everything Doctors Ask Us — Answered
+ Honest answers to the questions we hear from physicians, group practices, and hospital CFOs every single week.
+ <div id=None class='faq'>How is Health Billing actually different from the other 200 billing companies pitching me? +
+ Three structural differences. (1) Specialty-aligned coders — your account is staffed by AAPC/AHIMA-certified coders who only work your specialty (cardiology coders for cardiology, ortho for ortho), not a generalist pool. (2) Daily denial work — denials are touched within 24 hours, not parked for the end-of-month report. (3) Transparent dashboards — you see every claim, every denial reason, every dollar in real time. No black-box "monthly summary."How long does onboarding take, and what does my staff actually have to do? +
+ Most practices are fully live in 5–10 business days. Your staff's involvement is minimal: a 60-minute kickoff call, a credentials/EHR access handoff, and a 30-minute workflow walkthrough. We do the heavy lifting — clearinghouse setup, payer enrollment migrations, fee schedule loads, charge-capture mapping, and parallel-run validation. You keep seeing patients; we move the billing engine underneath you.Will switching to you disrupt my cash flow during the transition? +
+ No. We run a two-week parallel transition: your current process continues while we mirror every claim, so nothing falls through. Most clients actually see increased deposits in month one because we immediately work the aged AR your previous biller was ignoring. We also guarantee no submission gaps in writing as part of the SLA.What does it cost? Are there hidden fees? +
+ Simple percentage-of-collections model — typically 3% to 7% depending on specialty, volume, and payer mix. We only earn when you collect. No setup fees, no monthly minimums, no per-claim charges, no long-term contracts. Credentialing, AR cleanup, and reporting are included. The only line item outside the percentage is optional add-ons like full-service medical coding or transcription, which are quoted up front.What kind of revenue lift should I realistically expect? +
+ Across our book of business, practices that switch from in-house or another billing company see a 20–40% net collections improvement within 90 days. The lift comes from four levers: higher first-pass acceptance (we run at 98.2%), aggressive denial recovery, identification of underpayments against contracted rates, and recovery of aged AR over 90 days that was previously written off. We model your specific upside in the free audit before you commit to anything.Do you work with my EHR / PM system? +
+ Yes — we integrate with 100+ platforms including Epic, Cerner/Oracle Health, athenahealth, eClinicalWorks, Kareo/Tebra, DrChrono, NextGen, Allscripts/Veradigm, AdvancedMD, Practice Fusion, Meditech, CureMD, OfficeAlly, and more. If your platform isn't on the list, we'll build the integration at no charge during onboarding. We can work read-only, write-back, or via SFTP — whatever your IT prefers.Are you HIPAA compliant? Where does my patient data live? +
+ Yes — HIPAA-compliant, SOC 2 Type II certified, and a signed BAA is included with every engagement. PHI is encrypted in transit (TLS 1.3) and at rest (AES-256), stored on US-based infrastructure, with role-based access controls and full audit logging. We undergo annual third-party penetration testing and quarterly internal access reviews. Your compliance officer can request our SOC 2 report and security questionnaire on day one.Where is your team based? Is anything offshored? +
+ Your account manager, denials team, and AR specialists are US-based, headquartered in Jersey City, NJ. Some routine charge-entry work is performed by our credentialed offshore team under direct US supervision — this keeps your pricing competitive without compromising quality. PHI handling, payer escalations, and patient-facing communications are 100% US-based. You always speak to a US team member.What specialties do you handle? +
+ 40+ specialties including primary care, cardiology, orthopedics, nephrology, oncology, behavioral health/psychiatry, neurology, radiology, pathology/lab, ophthalmology, OB/GYN, pediatrics, urgent care, ED, PT/OT, anesthesia, pain management, dermatology, gastroenterology, and surgery (general & subspecialty). We also support ASCs, hospitals, FQHCs, RHCs, DME suppliers, and independent labs.How do you handle denials? My current biller just resubmits and prays. +
+ Every denial is triaged within 24 hours and routed to a specialist by denial category — clinical (medical necessity, coding), administrative (auth, eligibility, COB), or payer-specific. We work the root cause, not just the resubmission: appeals are written by certified coders with payer-specific medical-necessity language, and recurring denial patterns are fed back into our edits engine so the same denial doesn't happen twice. Average recovery rate on previously denied claims: 67%.Will I lose visibility into my revenue cycle? +
+ The opposite. You get a real-time dashboard showing charges, payments, AR aging, denial rates, payer mix, top CPT performance, provider productivity, and net collection rate — drillable down to the individual claim. We deliver a 30-minute monthly performance review with your dedicated account manager, plus on-demand custom reports for your CFO or board. Everything is exportable.Do you handle credentialing and payer enrollment? +
+ Yes, end-to-end: CAQH setup and maintenance, NPI registration, Medicare/Medicaid enrollment, commercial payer enrollment, hospital privileging support, re-credentialing, and ongoing roster maintenance. New providers are typically fully credentialed in 60–90 days (versus the 120–180 industry average). Included for clients on our full RCM package; available standalone for new practices and provider additions.Do you bill patients too, or only insurance? +
+ Both. We handle full patient AR: statement generation, online payment portal (branded to your practice), payment plans, automated reminders by SMS/email, and live phone support staffed by US patient-services reps. Patients have one number to call with billing questions — and it's not your front desk. Average patient collection rate: +38% versus in-house.What if I'm a small solo practice — am I too small for you? +
+ No. We serve solo physicians all the way up to 500-provider hospital systems. Roughly 40% of our clients are 1–5 provider practices. Our pricing scales — solo practitioners pay the same percentage rate as a multi-site group, with the same dedicated account manager and same dashboards. There's no minimum revenue requirement.What's the contract — am I locked in? +
+ Month-to-month with a 30-day out clause. No long-term commitment, no exit penalties, no clawback on collected AR. If we don't perform, you leave — and we hand off all data, denials in flight, and AR work-in-progress to your next biller in a clean transition packet. We earn the renewal every month.How do I get started — what does the free audit actually involve? +
+ 30 minutes of your time. Send us a recent AR aging report and a sample of recent EOBs/denials (de-identified is fine). Within 5 business days we deliver a written report covering: estimated leakage, top 5 fixable denial categories, underpayment exposure against your top contracts, and a projected revenue recovery range. Zero cost, zero obligation, no sales pressure. You can use the findings to improve your in-house team if you decide not to outsource. <button onclick=go('contact') type=None>Talk to a Specialist — Free Audit →
+ [h2] See How Much Revenue You're Missing
+ A free 30-minute audit reveals exactly where your practice is leaking revenue — and what it would take to fix it. <button onclick=go('contact') type=None>Schedule Free Billing Audit →© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | ← Home
+
+########## PAGE #rcm (class='pg')
+ <section id=None class='svc-hero'>← Home / Services
+ [h2] Revenue Cycle Management / (RCM) Services
+ End-to-end RCM strategy and operations that transforms how your organization generates and collects revenue — systematically and sustainably.+34%Average revenue increase52%Reduction in denials40%Operating cost savings18 daysAverage AR days
+ <section id=None class='content-section'>What is RCM
+ [h2] Revenue Cycle Management is the Financial Backbone of Your Practice
+ RCM encompasses every administrative and clinical function that contributes to the capture, management, and collection of patient service revenue — from scheduling through final payment. Health Billing optimizes all of it.
+ [h4] Front-End RCM
+ Scheduling optimization, pre-registration, eligibility verification, prior authorization, and financial counseling — clean data from day one.
+ [h4] Mid-Cycle RCM
+ Charge capture integrity, clinical documentation improvement, coding accuracy, CDM review, and compliance auditing.
+ [h4] Back-End RCM
+ Claims management, denial resolution, AR follow-up, patient billing, collections, and payment reconciliation.
+ [h2] Our Full-Cycle RCM Process
+ [h4] Patient Scheduling & Registration
+ Demographic capture, insurance collection, authorization verification, and financial counseling before any service is rendered.
+ [h4] Eligibility & Benefits Verification
+ Real-time checks for every patient, every visit — deductibles, copays, covered services, and COB.
+ [h4] Prior Authorization Management
+ Timely auth requests, real-time status tracking, and proactive follow-up to eliminate auth-related denials.
+ [h4] Charge Capture & Clinical Documentation
+ Every billable service captured completely. Every diagnosis documented to the highest specificity for maximum legitimate reimbursement.
+ [h4] Coding, Claim Creation & Submission
+ Certified coders assign precise codes. Claims built with payer-specific formatting. Transmitted within 24 hours.
+ [h4] Payment Posting & Reconciliation
+ ERA and EOB posting within 24 hours. Underpayment identification and payer dispute resolution.
+ [h4] Denial Management & AR Follow-Up
+ Every denial investigated, appealed, resolved. Aging AR worked systematically. Nothing written off without exhausting every recovery option.💰
+ [h4] Increase Net Collections
+ Average 20–34% increase in net collections within the first 90 days.📉
+ [h4] Reduce Overhead
+ Eliminate in-house billing staff, training, software costs — saving 30–50%.⏱️
+ [h4] Accelerate Cash Flow
+ Reduce days in AR from 40+ to under 20. Faster payments, better cash position.📊
+ [h4] Data-Driven Decisions
+ Real-time dashboards and monthly strategic reports on every metric that matters.
+ [h2] Is Your Revenue Cycle Leaking?
+ Free RCM assessment: we'll map your cycle, identify the top 3 revenue gaps, and build a customized improvement roadmap — no cost. <button onclick=go('contact') type=None>Get Free RCM Assessment →© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | ← Home
+
+########## PAGE #coding (class='pg')
+ <section id=None class='svc-hero'>← Home / Services
+ [h2] Medical Coding by / Certified Specialists
+ CPC, CCS, and CPMA-credentialed coders across 40+ specialties. Accurate ICD-10-CM, CPT, HCPCS coding that maximizes reimbursement while maintaining full compliance.99.1%Coding accuracy40+SpecialtiesCPC/CCSCertified coders only72hrStandard coding TAT
+ <section id=None class='content-section'>Coding Services
+ [h2] Every Code Has a Dollar Value. / We Capture All of It.
+ Upcoding creates liability. Downcoding leaves money on the table. Incorrect codes trigger denials, audits, and compliance investigations. Our certified coders assign the right codes, with the right modifiers, every time.
+ - ICD-10-CM diagnosis coding to highest specificity
+ - CPT-4 procedure coding for all specialties
+ - HCPCS Level II coding (DME, drugs, supplies)
+ - E&M visit level determination and documentation review
+ - Surgical and procedural coding with modifier assignment
+ - Outpatient and inpatient facility coding
+ - DRG assignment and optimization for hospitals
+ - Clinical documentation improvement (CDI) queries
+ - Pre- and post-payment coding audits
+ - Coding compliance program development
+ [h4] Why Coding Accuracy is Mission-Critical
+ A single missing ICD-10 digit can turn a valid claim into a denial. A wrong CPT modifier can cut your reimbursement by 50%. Our coders average 8+ years of specialty-specific experience and maintain continuous AAPC/AHIMA certification.
+ [h4] Specialty-Specific Coding Teams
+ Cardiology codes differently from orthopedics. Oncology requires a different knowledge base than behavioral health. We assign coders who specialize in your exact service lines — not generalists covering everything.
+ [h4] Audit-Ready Documentation
+ Every code we assign is traceable to specific documentation. In the event of a payer audit or OIG review, you have a complete, defensible record of every coding decision.
+ [h2] Specialties We Code🫀
+ [h4] Cardiology🦴
+ [h4] Orthopedic Surgery🧠
+ [h4] Neurology🔬
+ [h4] Pathology & Lab🧬
+ [h4] Oncology🩺
+ [h4] Internal Medicine👁️
+ [h4] Ophthalmology🧘
+ [h4] Behavioral Health📡
+ [h4] Radiology🌙
+ [h4] Anesthesiology🚨
+ [h4] Emergency Medicine✂️
+ [h4] Outpatient Surgery
+ [h2] Free Coding Audit — Find Out What You're Missing
+ We'll review 100 recent claims and identify coding errors, missed codes, and underpayment patterns — at no charge. <button onclick=go('contact') type=None>Request Free Coding Audit →© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | ← Home
+
+########## PAGE #credentialing (class='pg')
+ <section id=None class='svc-hero'>← Home / Services
+ [h2] Provider Credentialing & / Payer Enrollment Services
+ Every day a provider isn't credentialed is revenue lost. We enroll with Medicare, Medicaid, and every major private insurer — faster than anyone else in the business.28 daysAverage enrollment500+Payers in network99%Success rateAll 50States active
+ <section id=None class='content-section'>Credentialing Services
+ [h2] Credentialing Delays Cost You Thousands. We Eliminate the Wait.
+ A new provider who isn't credentialed can't bill. An expired CAQH attestation can cost you payer contracts. Our credentialing specialists manage every detail so your providers are enrolled, active, and generating revenue on schedule.
+ - Medicare Part A & B enrollment (CMS-855 applications)
+ - All 50 state Medicaid programs enrollment
+ - All major commercial payer credentialing
+ - CAQH profile setup and continuous re-attestation
+ - NPI registration (Type 1 & 2) and taxonomy management
+ - Group practice enrollment and re-credentialing
+ - Hospital privilege applications and peer review
+ - State medical license verification and tracking
+ - DEA and CDS registration management
+ - TRICARE, CHAMPVA, and VA Community Care enrollment
+ - Credentialing status tracking and proactive expiration alertsPayers We Credential With:🏛️ Medicare🏥 All 50 MedicaidBCBSAetnaUnitedHealthcareCignaHumanaMolinaCenteneTRICARE+ 490 more →
+ [h4] Provider Data Collection
+ We gather all required documentation: licenses, DEA, malpractice, NPI, training certificates, and work history. Our checklist ensures nothing is missed on the first submission.
+ [h4] CAQH Profile Management
+ Complete CAQH setup or audit of existing profiles. Continuous re-attestation monitoring — we alert you 60 days before expiration and re-attest automatically.
+ [h4] Payer Application Submission
+ Simultaneous enrollment with Medicare, Medicaid, and all targeted commercial payers. Payer-specific applications prepared correctly the first time.
+ [h4] Active Weekly Follow-Up
+ Weekly payer follow-up from day one. We escalate when payers stall. Our relationships with credentialing departments move applications faster.
+ [h4] Enrollment Confirmation & Activation
+ We confirm effective dates, obtain provider IDs, and update your billing system immediately so billing can begin the same day enrollment is confirmed.⚡
+ [h4] 28-Day Average Enrollment
+ vs. 90+ days managed in-house. We know the payers, portals, and people.📋
+ [h4] Zero Application Errors
+ Dual-review before every submission. Incomplete applications are the #1 cause of delays — we eliminate them.🔔
+ [h4] Proactive Expiration Monitoring
+ We track every license, DEA, and CAQH attestation — alerting you 60–90 days before expiration.💵
+ [h4] Protect Your Revenue
+ Each unresolved credentialing issue costs $10K–$50K/month in delayed billing. We keep that number at zero.
+ [h2] New Provider? Credentialing Backlog? We Can Help.
+ Whether onboarding one provider or fifty, we handle the entire credentialing process so your team can focus on patient care. <button onclick=go('contact') type=None>Start Credentialing Today →© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | ← Home
+
+########## PAGE #denials (class='pg')
+ <section id=None class='svc-hero'>← Home / Services
+ [h2] Denial Management & / Claims Appeals Services
+ The average provider writes off 3–5% of gross revenue as uncollectible denials. That's money you've earned — and we recover it. Our resolution rate is 93.4%.93.4%Denial resolution rate72hrAppeal turnaround52%Denial rate reduction$380KAvg annual recovery/client
+ <section id=None class='content-section'>Denial Management
+ [h2] Most Denied Claims Are Recoverable. We Prove It.
+ 65% of denied claims are never reworked — they're written off. Health Billing's denial management team doesn't accept denial as a final answer. We investigate, document, appeal, and escalate until every recoverable dollar is collected.
+ - Root-cause categorization of all denial types
+ - First-level appeal letters with clinical documentation
+ - Second-level and peer-to-peer review coordination
+ - External appeals and state Insurance Department complaints
+ - Authorization and medical necessity appeals
+ - Timely filing appeals with proof of prior submission
+ - Underpayment identification and payer dispute letters
+ - Monthly denial scorecards and root-cause reports
+ - Front-end process improvements to prevent recurrence
+ [h4] Top 7 Denial Reasons — And How We Fix Them
+ 1. Missing/invalid patient info → front-end verification. 2. Authorization issues → retroactive auth + medical necessity appeals. 3. Duplicates → claim history audit. 4. Timely filing → recovery with proof of submission. 5. Coding errors → corrected claims with certified coder review. 6. Medical necessity → clinical appeal letters. 7. COB issues → proper claim sequencing.
+ [h4] Prevention Is Better Than Cure
+ We don't just recover denied claims — we eliminate the conditions that cause them. Monthly denial reports identify patterns, and we work with your front desk and clinical teams to stop errors from recurring. Most clients see 50%+ reduction in denial rate within 6 months.
+ [h4] Government Payer Appeals
+ Medicare and Medicaid appeals have strict processes — Redeterminations, Reconsiderations, ALJ hearings. We navigate every level with precision, maximizing recoveries from government payer denials.
+ [h2] How Much Denied Revenue Are You Sitting On?
+ Let us review your last 90 days of denied claims and show you exactly how much is recoverable — completely free. <button onclick=go('contact') type=None>Request Free Denial Analysis →© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | ← Home
+
+########## PAGE #ar (class='pg')
+ <section id=None class='svc-hero'>← Home / Services
+ [h2] Accounts Receivable (AR) / Recovery & Follow-Up
+ Aging AR is silent revenue leakage. Our AR recovery team hunts down every balance — regardless of age — and brings it to resolution.18 daysAR days post-engagement87%Recovery on 90+ day AR100%All claims worked
+ <section id=None class='content-section'>AR Services
+ [h2] We Work Every Dollar. / No Balance Left Behind.
+ Most billing companies prioritize easy wins. The hard stuff — old claims, complex denials, government payer disputes — gets ignored. We work all of it. Our AR specialists are assigned by payer type and aging bucket with specific protocols for each category.
+ - Insurance AR follow-up for all payer types
+ - Patient balance resolution and payment plan setup
+ - 60/90/120/180+ day aging bucket management
+ - Payer portal follow-up and phone escalations
+ - Re-billing and corrected claim submission
+ - Secondary insurance identification and billing
+ - Write-off review before any finalization
+ - AR cleanup projects for practices switching billing companies
+ [h4] AR Analysis & Stratification
+ We segment all open AR by payer, aging bucket, denial reason, and dollar value. Each segment gets a tailored follow-up protocol.
+ [h4] Insurance Follow-Up
+ Daily payer portal checks, outbound calls, and online dispute submissions. We don't wait — we chase payers on a set schedule.
+ [h4] Patient Balance Management
+ Automated statements, outbound calls, and payment plan setup. Collecting patient balances compliantly without damaging relationships.
+ [h4] Resolution & Write-Off Review
+ Every balance resolved, appealed, or recommended for write-off with full documentation. No balance written off without manager review.
+ [h2] Let Us Work Your Aging AR
+ Send us your AR aging report and we'll tell you — for free — exactly how much we can recover and in what timeframe. <button onclick=go('contact') type=None>Get Free AR Recovery Estimate →© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | ← Home
+
+########## PAGE #transcription (class='pg')
+ <section id=None class='svc-hero'>← Home / Services
+ [h2] Medical Transcription Services / HIPAA-Secure & Accurate
+ 99.5%+ accuracy. Fast turnaround. Direct EHR integration. We turn your dictations into structured, compliant clinical documentation — reliably.99.5%+Accuracy rate4hr STATEmergency TAT100+EHR integrationsHIPAAFully compliant + BAA
+ <section id=None class='content-section'>Transcription Services
+ [h2] Clinical Documentation / Done Right. Every Time.
+ Poor documentation causes coding errors, medical necessity denials, audit exposure, and clinical communication failures. Our transcriptionists are trained across 40+ specialties, producing documentation that is accurate, complete, and billing-ready.
+ - Acute care and ambulatory transcription
+ - Discharge summaries and operative reports
+ - Office visit and consult notes
+ - Radiology and pathology reports
+ - Psychiatric evaluations and therapy notes
+ - Emergency medicine documentation
+ - PT, OT, and speech therapy notes
+ - Direct EHR upload via HL7 and direct interfaces
+ - STAT, 24-hour, and standard TAT options
+ [h4] Human + AI-Assisted Workflow
+ AI-assisted transcription as a first pass, then every document reviewed and quality-assured by an experienced human transcriptionist. AI speed at human accuracy levels.
+ [h4] HIPAA Security You Can Count On
+ 256-bit AES encryption in transit and at rest. Signed BAA. Role-based access controls. Regular security audits. Patient data protected at every step.
+ [h4] Turnaround Times That Match Your Workflow
+ STAT (4 hours), Priority (12 hours), and Standard (24 hours) options. Customizable scheduling to match your dictation volume and clinical needs.
+ [h2] Start Receiving Accurate Transcriptions Within 48 Hours
+ Setup is fast, integration is seamless, and we offer a free trial for new clients. <button onclick=go('contact') type=None>Start Free Transcription Trial →© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | ← Home
+
+########## PAGE #claims (class='pg')
+ <section id=None class='svc-hero'>← Home / Services
+ [h2] Claims Management / From Submission to Payment
+ Real-time claim scrubbing, electronic submission, status tracking, and proactive payer follow-up — managed end-to-end so not a single claim falls through the cracks.98.2%First-pass acceptance24hrSubmission turnaround3,000+Automated edits100%Claims tracked to resolution
+ <section id=None class='content-section'>Claims Services
+ [h2] Every Claim Tracked. / Every Payment Collected.
+ Claims management isn't just about submitting — it's about knowing where every claim stands, at every moment, and acting immediately when something goes wrong.
+ - Real-time eligibility verification before submission
+ - Proprietary scrubbing with 3,000+ payer-specific edits
+ - Electronic and paper claim generation and submission
+ - Clearinghouse management and EDI transmission
+ - Real-time claim status tracking by payer
+ - Automated 277/835 processing
+ - Rejection management and same-day resubmission
+ - Payer portal follow-up on unpaid claims
+ - Claim adjustment and corrected claim submission
+ [h4] Pre-Submission Scrubbing
+ 3,000+ payer-specific edits catch coverage gaps, coding errors, and demographic issues before a claim ever leaves our system — protecting your first-pass rate.
+ [h4] Real-Time Status Visibility
+ Log in at any time and see the exact status of every claim — submitted, in adjudication, pending, paid, or denied — with action notes from our team.
+ [h4] Zero-Lag Rejection Response
+ Clearinghouse rejections are identified and corrected within the same business day. No claim sits rejected for more than 24 hours without action.
+ [h2] See Your Claims Managed the Right Way
+ Free claims assessment — we'll show you what a fully managed claims pipeline looks like for your practice. <button onclick=go('contact') type=None>Get Free Claims Assessment →© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | ← Home
+
+########## PAGE #payers (class='pg')
+ <section id=None class='svc-hero'>← Home
+ [h2] We Bill Every Major Insurance / Payer in America
+ Medicare. Medicaid. Every private insurer. Every managed care plan. Health Billing is credentialed, contracted, and actively billing with 500+ payers across all 50 states — so your providers get paid no matter who the patient's insurer is.500+Payers in network50States covered100%Government payer compliant28 daysAvg enrollment time
+ <section id=None class='content-section'>Government Payers
+ [h2] Medicare & Medicaid — Done Right, Every Time
+ Medicare and Medicaid are America's largest healthcare payers — and also the most complex to bill. Our government billing specialists handle it all with precision and full compliance.🏛️
+ [h3] MedicareCMS / Federal Program
+ - Part A — inpatient, SNF, hospice
+ - Part B — physician, outpatient, DME
+ - Part C — Medicare Advantage (all plans)
+ - Part D — pharmacy coordination
+ - MIPS / QPP compliance & reporting
+ - MSP coordination
+ - RAC, MAC, OIG audit defense
+ - LCD/NCD policy compliance🏥
+ [h3] MedicaidAll 50 State Programs
+ - All 50 state Medicaid programs
+ - Medicaid MCOs and managed care
+ - CHIP (Children's Health Insurance)
+ - Dual-eligible (Medicare + Medicaid)
+ - FQHC billing
+ - Behavioral health Medicaid
+ - LTSS and waiver programs⚖️
+ [h3] Other GovernmentFederal & State Programs
+ - TRICARE / CHAMPVA
+ - VA Community Care Network
+ - Federal Employee Health Benefits (FEHB)
+ - Workers' Compensation (all 50 states)
+ - Auto / No-Fault billing
+ - Indian Health Service (IHS)
+ - Ryan White HIV/AIDS programMajor Commercial Insurers
+ [h2] Every Private Insurer. Every Plan. We Handle Them All.
+ Commercial payers each have unique billing rules, fee schedules, auth requirements, and claim formats. Our payer-specific billing teams know the nuances of every major insurer.BCBS
+ [h4] Blue Cross Blue ShieldAll 36 BCBS Regional Plans
+ We bill all 36 independent BCBS plans — from Anthem and BCBS of Illinois to Hawaii and Montana — with plan-specific fee schedules and claim requirements applied.AET
+ [h4] Aetna / CVS HealthCommercial, Medicare Advantage & Medicaid
+ Full Aetna billing including commercial PPO/HMO, Medicare Advantage, and Medicaid managed care plans — with proper modifier and bundling rules applied.UHC
+ [h4] UnitedHealthcareUHC / UnitedHealth Group / Optum
+ America's largest insurer requires specialized knowledge. We navigate UHC's portal, authorization requirements, and reimbursement policies for maximum collections.CIG
+ [h4] Cigna / EvernorthCommercial & Medicare Advantage
+ Cigna billing across commercial, Medicare Advantage, behavioral health, and pharmacy benefit plans — including reference-based pricing arrangements.HUM
+ [h4] HumanaMedicare Advantage, Commercial & Medicaid
+ One of America's top Medicare Advantage payers. We handle Humana's authorization workflows, HEDIS quality reporting, and star rating optimization alongside billing.CNT
+ [h4] Centene CorporationMedicaid, Medicare & ACA Plans
+ The largest Medicaid managed care organization in the US. Centene's brands include WellCare, Health Net, Ambetter, and Fidelis — we bill them all.ANT
+ [h4] Anthem / Elevance Health14 States — Commercial, MA & Medicaid
+ The largest BCBS licensee. We manage Anthem/Elevance commercial, Medicaid, and Medicare Advantage billing across all 14 Anthem-affiliated states.MOL
+ [h4] Molina HealthcareMedicaid & Medicare — 19 States
+ A leading managed Medicaid payer in 19 states. We navigate Molina's state-specific billing requirements and ensure proper claim adjudication and appeals.KAI
+ [h4] Kaiser PermanenteCommercial & Medicare Plans
+ Kaiser's closed-network model requires specialized non-member billing workflows. We handle commercial and out-of-network Kaiser claims with full documentation support.+400
+ [h4] 400+ More PayersRegional, Specialty & Niche Plans
+ Oscar Health, Bright Health, Clover, Devoted Health, SelectHealth, Independence Blue Cross, Geisinger, CHRISTUS, Scott & White, and hundreds more regional plans.Specialty Insurance Programs
+ [h2] Beyond Standard Insurance — We Handle All of It
+ [h4] 🚗 Auto / No-Fault
+ MVA billing with proper lien management, attorney coordination, and no-fault payer follow-up across all no-fault states.
+ [h4] ⚒️ Workers' Compensation
+ State-by-state workers' comp billing, fee schedule compliance, utilization review responses, and IME documentation support.
+ [h4] 🎖️ TRICARE / Veterans
+ TRICARE West, East, For Life, and VA Community Care Network — all authorization types and billing configurations covered.
+ [h4] 🏢 Employer Self-Funded Plans
+ TPA and employer-sponsored self-funded plan billing — including reference-based pricing and direct contracting models.
+ [h4] 📋 Self-Pay & Uninsured
+ Charity care screening, sliding-scale fee management, financial counseling, and compassionate patient payment administration.
+ [h4] 🌍 International / Travel
+ International traveler and expat insurance billing — including proper documentation for foreign insurance reimbursement claims.
+ [h2] Not Yet Credentialed with a Payer?
+ We don't just bill these insurers — we get your providers enrolled with every payer that matters to your practice. Average enrollment: 28 days. <button onclick=go('credentialing') type=None>Learn About Credentialing → <button onclick=go('contact') type=None>Get a Free Payer Enrollment Assessment
+ [h2] Every Payer. Every State. Every Claim Paid.
+ No matter who insures your patients, we make sure you get paid — correctly, compliantly, and on time. <button onclick=go('contact') type=None>Request Free Billing Assessment →© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | ← Home
+
+########## PAGE #specialties (class='pg')
+ <section id=None class='svc-hero'>← Home
+ [h2] Medical Billing for Every / Healthcare Specialty
+ From solo family practice to multi-site hospital networks — Health Billing has specialty-trained billing teams for every type of provider. Your specialty has unique codes, unique payer rules, and unique compliance requirements. We know them all.40+Specialties covered4,800+Providers servedDedicatedSpecialty billing teamsAll 50States active
+ <section id=None class='content-section'>Primary & Preventive Care
+ [h2] The Front Line of Healthcare🩺
+ [h3] Primary Care / Internal Medicine
+ E&M coding optimization, Annual Wellness Visits, chronic care management (CCM), preventive services, and MIPS quality reporting.
+ - E&M level optimization (99202–99215)
+ - Chronic Care Management (CCM) billing
+ - Annual Wellness Visit (AWV) codes
+ - Transitional Care Management (TCM)⚡
+ [h3] Urgent Care
+ High-volume same-day billing, urgent care E&M coding, occupational health billing, and telehealth urgent care.
+ - Urgent care facility fee billing (S9083)
+ - Same-day claim submission
+ - Occupational medicine and work injury
+ - Pre-employment physical billing👶
+ [h3] Pediatrics
+ Well-child visits, immunization billing, developmental screenings, and CHIP/Medicaid pediatric billing.
+ - Well-child visit codes (99381–99395)
+ - Vaccine administration (90460/90461)
+ - EPSDT / developmental screening
+ - CHIP and pediatric Medicaid🌸
+ [h3] OB/GYN & Women's Health
+ Global OB packages, antepartum care, gynecological procedure coding, and preventive screening billing.
+ - Global obstetric package billing
+ - Antepartum and postpartum care
+ - Mammography and screening billing
+ - Fertility treatment billingSurgical & Procedural
+ [h2] High-Complexity Billing for High-Stakes Procedures🦴
+ [h4] Orthopedics & Spine Surgery
+ Total joint replacement, spinal fusion, sports medicine, fracture care, arthroscopy. Modifier 62, 80, assistant surgeon billing. Implant cost reporting.🫀
+ [h4] Cardiology
+ Invasive and non-invasive cardiology — cardiac cath, EP studies, echo, stress testing, remote monitoring (RPM), and heart failure management programs.🧠
+ [h4] Neurology & Neurosurgery
+ EEG, EMG, nerve conduction, cranial/spinal surgery, sleep study billing, and deep brain stimulation program billing.👁️
+ [h4] Ophthalmology
+ Cataract surgery, glaucoma management, retinal procedures, vision therapy, and OCT diagnostic billing.✂️
+ [h4] General Surgery
+ Laparoscopic and open surgical procedures, hernia repair, bariatric surgery billing, and global surgical package management.🌙
+ [h4] Anesthesiology
+ Base unit and time unit anesthesia billing, CRNA and physician billing, MAC coding, and pain management procedure billing.Medical Specialties
+ [h2] Complex Medical Specialties — Billed Right
+ [h4] 🫘 Nephrology
+ Dialysis billing (in-center and home), ESRD monthly capitation, kidney transplant follow-up, CAPD/CCPD billing, and CKD management coding.
+ [h4] 🧬 Oncology & Hematology
+ Chemotherapy infusion billing (96401–96549), immunotherapy, drug administration, oncology E&M, clinical trial billing, and radiation oncology.
+ [h4] 🫁 Pulmonology
+ Spirometry and PFT billing, bronchoscopy coding, COPD management, sleep study billing, and critical care pulmonology coding.
+ [h4] 🩸 Gastroenterology
+ Colonoscopy and EGD billing, polyp removal coding, ERCP, liver biopsy, and capsule endoscopy — including screening vs. diagnostic billing.
+ [h4] 💉 Rheumatology
+ Joint injection billing, infusion therapy for biologics, autoimmune disease management coding, and documentation support.
+ [h4] 🦋 Endocrinology
+ Diabetes management billing, thyroid procedure coding, insulin pump (CSII), continuous glucose monitoring (CGM), and RPM billing.
+ [h4] 💊 Pain Management
+ Epidural injection billing, nerve block coding, spinal cord stimulator, fluoroscopy guidance, drug testing, and controlled substance compliance billing.
+ [h4] 🌡️ Infectious Disease
+ HIV/AIDS management, antimicrobial stewardship, complex antibiotic infusion billing, hospital consultation coding.
+ [h4] 💉 Dermatology
+ Lesion removal coding, Mohs surgery billing, cosmetic vs. medically necessary distinction, biopsy coding, and phototherapy billing.Behavioral Health
+ [h2] Mental Health & Substance Use — / A Specialty That Demands Precision
+ Behavioral health billing has unique parity requirements, licensure considerations, and payer-specific authorization rules. Our behavioral health billing team navigates all of it.
+ [h4] 🧘 Psychiatry & Psychology
+ Psychiatric evaluation coding, psychotherapy time-based billing, neuropsychological testing, and inpatient psychiatric billing.
+ [h4] 🤝 Counseling & Therapy
+ Individual, group, and family therapy billing for LCSWs, LPCs, MFTs, and licensed counselors with parity law compliance.
+ [h4] 💊 Substance Use Treatment
+ OTP/MAT billing, ASAM level of care coding, methadone/buprenorphine billing, IOP and residential treatment, and SBIRT coding.
+ [h4] 🧒 ABA Therapy
+ ABA therapy billing for autism spectrum disorder — protocol modification, technician supervision, and Medicaid ABA waiver program billing.Diagnostic & Post-Acute
+ [h2] Diagnostic Services & Long-Term Care📡
+ [h3] Radiology & Imaging
+ Professional and technical component billing, diagnostic and interventional radiology, MRI/CT/X-ray, PET scan, and teleradiology billing.🔬
+ [h3] Pathology & Clinical Laboratory
+ Clinical lab billing with CLIA compliance, anatomic pathology coding, molecular diagnostics, genetic testing, and PAMA payment rules.🦵
+ [h3] Physical & Occupational Therapy
+ Therapy billing with KX modifier management, functional limitation reporting, Medicare therapy cap tracking, and group vs. individual billing compliance.🚨
+ [h3] Emergency Medicine
+ ED E&M level assignment (99281–99285), critical care coding, trauma activation billing, and No Surprises Act compliance management.🏥
+ [h3] Hospital Medicine
+ Admission, subsequent, and discharge E&M coding, critical care billing, observation services, and hospitalist group billing.🏡
+ [h3] Home Health & Hospice
+ PDGM episode billing, OASIS coding, home health certification, hospice benefit period billing, and routine home vs. continuous care coding.🏨
+ [h3] Skilled Nursing (SNF)
+ PDPM billing, Part A SNF billing, Part B ancillary services, attending physician visits, and Medicare triple-check audit preparation.🌐
+ [h3] Telehealth / Virtual Care
+ Telehealth billing across all payers, place of service compliance, audio-only vs. video coding, RPM/PCM billing, and interstate telehealth support.🗣️
+ [h3] Speech-Language Pathology
+ SLP billing for dysphagia, communication disorders, voice therapy, cognitive rehabilitation, and AAC device billing through Medicaid and commercial payers.
+ [h2] Every Specialty. Without Exception.
+ Don't see yours? If healthcare providers bill for it, we bill it.🩺
+ [h4] Family Medicine🫀
+ [h4] Cardiology🦴
+ [h4] Orthopedics🧠
+ [h4] Neurology🫘
+ [h4] Nephrology🧬
+ [h4] Oncology🩸
+ [h4] Gastroenterology🫁
+ [h4] Pulmonology💉
+ [h4] Rheumatology🦋
+ [h4] Endocrinology👁️
+ [h4] Ophthalmology🌸
+ [h4] OB/GYN👶
+ [h4] Pediatrics🧘
+ [h4] Psychiatry📡
+ [h4] Radiology🔬
+ [h4] Pathology & Labs🌙
+ [h4] Anesthesiology✂️
+ [h4] General Surgery🚨
+ [h4] Emergency Medicine🏥
+ [h4] Hospital Medicine⚡
+ [h4] Urgent Care🦵
+ [h4] Physical Therapy🗣️
+ [h4] Speech Therapy♿
+ [h4] Occupational Therapy🦷
+ [h4] Oral Surgery🦻
+ [h4] ENT🦷
+ [h4] Podiatry💊
+ [h4] Pain Management🌡️
+ [h4] Infectious Disease🏡
+ [h4] Home Health🕊️
+ [h4] Hospice Care🏨
+ [h4] Skilled Nursing🧒
+ [h4] ABA Therapy💊
+ [h4] Substance Use💉
+ [h4] Dermatology🌐
+ [h4] Telehealth🏋️
+ [h4] Sports Medicine🫀
+ [h4] Vascular Surgery🏢
+ [h4] Multispecialty Groups🌐
+ [h4] Concierge Medicine
+ [h2] Your Specialty. Our Expertise. More Revenue.
+ Tell us your specialty and we'll show you exactly how we've increased collections for practices just like yours — with real numbers, not promises. <button onclick=go('contact') type=None>Request a Specialty-Specific Demo →© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | ← Home
+
+########## PAGE #departments (class='pg')
+ <section id=None class='svc-hero'>← Home
+ [h2] Medical Billing for Every Department / and Every Type of Clinic
+ Primary care, urgent care, nephrology, cardiology, OB/GYN, pediatrics, behavioral health, labs, imaging, surgery centers, and specialty groups all have different codes, payer rules, authorizations, and denial patterns. Health Billing builds department-specific billing workflows so every visit, procedure, test, and follow-up is coded, submitted, appealed, and collected correctly.40+Departments covered24hrClaim submission target500+Payers supportedAll 50States served
+ <section id=None class='content-section'>Department-Specific RCM
+ [h2] Built Around How Each Specialty Actually Gets Paid
+ A primary care clinic loses revenue differently than a nephrology group. Urgent care needs speed, OB/GYN needs package accuracy, cardiology needs documentation and modifier precision, while behavioral health needs authorization and parity-aware follow-up. We create a custom billing lane for every department.🩺
+ [h3] Primary Care & Internal Medicine
+ High-volume E&M, preventive visits, AWV, CCM, TCM, vaccine administration, lab coordination, and chronic disease billing.
+ - E&M leveling and modifier checks
+ - Annual wellness visit capture
+ - CCM, RPM, and care management billing⚡
+ [h3] Urgent Care
+ Fast-paced billing for walk-ins, occupational health, minor procedures, X-rays, flu tests, injections, and payer-specific urgent care rules.
+ - Same-day charge entry
+ - S9083 and POS handling
+ - Occupational medicine and work injury claims🫘
+ [h3] Nephrology
+ ESRD, dialysis, CKD, transplant follow-up, monthly capitation, home dialysis, and complex Medicare and Medicaid coordination.
+ - ESRD MCP billing
+ - Dialysis visit reconciliation
+ - Dual-eligible payer coordination🫀
+ [h3] Cardiology
+ Echo, stress testing, EKG, cath lab, EP studies, device monitoring, RPM, and cardiovascular procedure documentation review.
+ - Modifier and global period checks
+ - Diagnostics and procedure billing
+ - Prior authorization follow-up🌸
+ [h3] OB/GYN & Women’s Health
+ Global maternity packages, antepartum and postpartum care, gynecology procedures, screenings, fertility, and ultrasound billing.
+ - Global OB package accuracy
+ - Split billing where required
+ - Preventive versus diagnostic coding👶
+ [h3] Pediatrics
+ Well-child visits, vaccine administration, Medicaid, CHIP, developmental screening, sick visits, and pediatric preventive care.
+ - EPSDT and CHIP workflows
+ - Immunization code pairing
+ - Age-specific coding checks🧘
+ [h3] Behavioral Health
+ Psychiatry, therapy, counseling, substance use treatment, IOP, MAT, ABA, and authorization-heavy payer workflows.
+ - Session and time-based billing
+ - Auth and medical necessity tracking
+ - Parity-aware denial appeals🦴
+ [h3] Orthopedics & Pain Management
+ Fracture care, injections, procedures, spine, sports medicine, DME coordination, global surgical periods, and imaging linkage.
+ - Procedure and modifier review
+ - Global package management
+ - Implant and DME documentation🔬
+ [h3] Labs, Pathology & Diagnostics
+ Clinical lab, pathology, molecular diagnostics, toxicology, imaging, radiology, and payer policy-driven testing workflows.
+ - Medical necessity checks
+ - CLIA and LCD/NCD alignment
+ - Professional and technical components🚨
+ [h3] Emergency Medicine
+ ED E&M, trauma, critical care, observation, facility coordination, no-fault, and complex payer dispute handling.
+ - ED level validation
+ - Critical care documentation
+ - No Surprises Act awareness✂️
+ [h3] Surgery & ASC Billing
+ General surgery, ambulatory surgery centers, anesthesia, assistant surgeon billing, implants, global periods, and post-op care.
+ - ASC and professional claim split
+ - Global period monitoring
+ - Authorization and operative note review🌐
+ [h3] Telehealth & Virtual Care
+ Telehealth, remote patient monitoring, chronic care management, principal care management, and virtual-first clinic billing.
+ - POS and modifier accuracy
+ - Audio-only versus video billing
+ - RPM and CCM recurring claims
+ [h2] What We Customize for Each Department
+ [h4] Coding Rules
+ Specialty-specific CPT, ICD-10, HCPCS, modifiers, bundling edits, global periods, and documentation requirements.
+ [h4] Payer Rules
+ Cigna, Aetna, UHC, BCBS, Humana, Medicare, Medicaid, and MCO rules mapped to your specialty and state.
+ [h4] Collection Strategy
+ Follow-up queues built by denial type, payer, aging bucket, authorization risk, and claim value.
+ [h2] Tell Us Your Department. We Will Show the Revenue Leaks.
+ Book a free billing assessment and get a specialty-specific review of claims, denials, AR aging, payer mix, and collection opportunity. <button onclick=go('contact') type=None>Request Department Billing Audit →© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | <a href=mailto:hello@healthbilling.us onclick=None>hello@healthbilling.us | ← Home
+
+########## PAGE #insuranceCollections (class='pg')
+ <section id=None class='svc-hero'>← Home
+ [h2] Collections from Private Insurance, / Medicare, and Medicaid
+ We help practices collect from Cigna, Aetna, UnitedHealthcare, Blue Cross Blue Shield, Humana, Medicare, Medicaid, managed care plans, secondary payers, workers' comp, and patient responsibility balances. Our team does not stop at claim submission. We pursue payment until the claim is paid, appealed, adjusted, or escalated.CignaCommercial claimsMedicareCMS compliant billingMedicaidState MCO follow-upARAging bucket recovery
+ <section id=None class='content-section'>Payer Collection Engine
+ [h2] We Work the Claim Until Money Hits the Account
+ Many billing teams submit claims and wait. Health Billing uses payer-specific follow-up, denial appeals, underpayment review, secondary billing, and patient balance workflows to improve net collections across commercial, Medicare, and Medicaid payers.🏢
+ [h3] Private InsuranceCigna, Aetna, UHC, BCBS, Humana and more
+ - Eligibility and benefit verification
+ - Prior authorization tracking
+ - Claim status checks through portals and clearinghouses
+ - Denial appeal packets with documentation
+ - Underpayment and fee schedule review
+ - Secondary and tertiary claim follow-up🏛️
+ [h3] MedicareTraditional Medicare and Medicare Advantage
+ - LCD and NCD policy checks
+ - Modifier and medical necessity review
+ - MSP and coordination of benefits handling
+ - Medicare Advantage plan follow-up
+ - RAC, MAC, and audit response support
+ - Appeals and redetermination support🏥
+ [h3] MedicaidState Medicaid and Medicaid MCOs
+ - State-specific Medicaid rules
+ - Managed care plan billing workflows
+ - Eligibility, spend-down, and dual eligibility handling
+ - CHIP, EPSDT, and waiver billing support
+ - Timely filing and resubmission tracking
+ - Denied claim correction and appeals
+ [h2] How We Increase Collections
+ [h4] 1. Verify Before the Visit
+ We confirm active coverage, copay, deductible, authorization requirements, referral rules, and coordination of benefits before claims are created.
+ [h4] 2. Submit Clean Claims
+ Claims are checked for coding, modifiers, medical necessity, provider enrollment, place of service, payer edits, and documentation gaps.
+ [h4] 3. Follow Up by Payer and Aging Bucket
+ Open AR is worked by payer, dollar value, denial reason, timely filing risk, and 0 to 30, 31 to 60, 61 to 90, 90 plus day buckets.
+ [h4] 4. Appeal Denials and Underpayments
+ We prepare appeal packets, attach clinical documentation, cite payer policy, correct coding issues, and pursue payer reconsideration.
+ [h4] 5. Post, Reconcile, and Report
+ ERA and EOB payments are posted daily, underpayments are flagged, patient responsibility is moved correctly, and monthly payer performance is reported.
+ [h2] Private Insurance, Medicare, Medicaid, We Collect Across All of Them.
+ Let us review your payer mix and AR aging to show which insurance companies are holding your money. <button onclick=go('contact') type=None>Get a Free Payer Collections Review →© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | <a href=mailto:hello@healthbilling.us onclick=None>hello@healthbilling.us | ← Home
+
+########## PAGE #calculator (class='pg')
+ <section id=None class='svc-hero'>← Home
+ [h2] Medical Billing Collections Calculator
+ Estimate how much more your clinic may collect by improving clean claim rate, denial follow-up, AR recovery, and net collection performance. This is a planning calculator, actual collections depend on payer mix, specialty, contracts, documentation, and claim history.
+ <section id=None class='content-section'>Live Revenue Estimate
+ [h2] See the Collection Opportunity Before You SwitchMonthly patient visits 600
+ <input name=None id=calcVisits type=range value=600 min=50 max=6000 step=50 placeholder=None required=False oninput=updateCalc() onchange=None>Total completed visits or billable encounters per month.Average allowed amount per visit
+ <input name=None id=calcAllowed type=number value=185 min=20 max=None step=5 placeholder=None required=False oninput=updateCalc() onchange=None>Current net collection rate
+ <input name=None id=calcCurrentNcr type=number value=78 min=40 max=99 step=1 placeholder=None required=False oninput=updateCalc() onchange=None>Typical range is 70 to 95 percent depending on specialty, payer mix, and billing quality.Expected improved net collection rate
+ <input name=None id=calcImprovedNcr type=number value=92 min=50 max=99 step=1 placeholder=None required=False oninput=updateCalc() onchange=None>Current monthly AR over 60 days
+ <input name=None id=calcAr type=number value=45000 min=0 max=None step=1000 placeholder=None required=False oninput=updateCalc() onchange=None>Estimated AR recovery percentage
+ <input name=None id=calcArRecovery type=number value=22 min=0 max=80 step=1 placeholder=None required=False oninput=updateCalc() onchange=None>Specialty adjustment
+ <select name=None id=calcSpecialty type=None value=None min=None max=None step=None placeholder=None required=False oninput=None onchange=updateCalc()> <option value=1.00 selected=False>Primary Care / Internal Medicine <option value=1.08 selected=False>Urgent Care <option value=1.12 selected=False>Cardiology <option value=1.15 selected=False>Nephrology <option value=1.10 selected=False>OB/GYN <option value=1.06 selected=False>Pediatrics <option value=1.14 selected=False>Orthopedics / Pain <option value=1.09 selected=False>Behavioral Health <option value=1.18 selected=False>Surgery / ASC <option value=1.05 selected=False>Labs / ImagingHigher-complexity specialties often have more room for coding, denial, and AR improvement.Estimated OpportunityPotential additional collections per month
+ <div id=calcMonthly class='calc-big'>$0Potential additional collections per year
+ <div id=calcYearly class=''>$0Current monthly collections
+ <div id=calcCurrent class='cm-val'>$0Projected monthly collections
+ <div id=calcProjected class='cm-val'>$0AR recovery estimate
+ <div id=calcArGain class='cm-val'>$0Improvement gap
+ <div id=calcGap class='cm-val'>0%
+ This calculator is not a guarantee. It is an estimate designed to start a revenue conversation. For an accurate projection, Health Billing reviews your payer mix, claims, denial codes, aging AR, EHR reports, and specialty workflows. <button onclick=go('contact') type=None>Request a Free Revenue Audit© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | <a href=mailto:hello@healthbilling.us onclick=None>hello@healthbilling.us | ← Home
+
+########## PAGE #resources (class='pg')
+ <section id=None class='svc-hero'>← Home
+ [h2] Resources for Modern Practices
+ Practical, doctor-focused content on billing, coding, denials, payer rules, and the financial side of running a practice in the US.
+ <section id=None class='content-section'>📝 Latest from the Blog
+ [h2] Insights, Trends & PlaybooksDenials
+ [h3] The 7 Most Common Denial Codes — and How to Stop Them
+ CO-16, CO-97, CO-50, PR-204, and four more denial codes draining your practice — with the corrective workflow for each.Coding
+ [h3] 2026 CPT & ICD-10 Updates Every Practice Should Know
+ Key code changes, deleted codes, and new E&M guidelines that will impact your reimbursements next quarter.Cash Flow
+ [h3] Why Your Days in AR Are Higher Than You Think
+ The hidden ways aged AR slips past dashboards — and a 30-day plan to recover six figures of stuck revenue.Credentialing
+ [h3] Credentialing Bottlenecks Costing Doctors $30K+ a Month
+ Common payer enrollment delays and the documentation flow that closes them in 45–60 days instead of 120.Telehealth
+ [h3] Telehealth Billing in 2026: POS, Modifiers & Audit Risk
+ What the latest CMS and commercial payer rules mean for audio-only, RPM, CCM, and virtual-first clinics.Payers
+ [h3] Negotiating Better Rates with Commercial Payers
+ What data to bring, when to renegotiate, and the leverage points that actually move contract rates 8–15%.
+ <section id=None class='content-section'>📊 Case Studies
+ [h2] Real Practices. Real Revenue Lifts.
+ [h3] Multi-Site Cardiology — +$2.1M / yr
+ 4-location cardiology group cut denials 62%, lifted NCR from 91% to 97.4%, and recovered $480K in aged AR within 90 days.↑ 23% net collections in 6 months
+ [h3] Solo Internal Medicine — +$184K / yr
+ Independent IM practice replaced an in-house biller, automated eligibility, and recovered 5 months of stalled credentialing revenue.↑ 31% monthly collections
+ [h3] Behavioral Health Group — +$640K / yr
+ 22-clinician group rebuilt auth tracking, fixed parity-related denials, and reduced days in AR from 58 → 27 in one quarter.↓ 53% denials
+ [h3] Urgent Care Network — +$1.4M / yr
+ 9-location urgent care chain corrected POS errors, occ-med workflows, and same-day charge entry to lift clean-claim rate to 98%.↑ 18% net collections
+ [h3] Orthopedic Surgery — +$920K / yr
+ Ortho practice fixed global-period leakage, implant documentation, and auth tracking to recover 11 months of underpayments.↑ $920K recovered underpayments
+ [h3] Independent Lab — +$2.8M / yr
+ Reference lab realigned medical-necessity documentation with LCD/NCD policies and renegotiated 3 commercial payer contracts.↑ 27% reimbursement per test
+ <section id=None class='content-section'>📘 Guides & Whitepapers
+ [h2] Free Downloads for Doctors & Administrators
+ [h3] 📄 The Independent Practice RCM Playbook
+ A 38-page guide covering eligibility, charge capture, coding, denials, AR, and reporting for solo and small-group practices.
+ [h3] 📄 Denial Prevention Cheat Sheet
+ Top 25 denial reasons mapped to root causes, payer policies, and the exact corrective workflow for each.
+ [h3] 📄 Credentialing Checklist (US)
+ Every document, deadline, and payer-specific requirement — Medicare, Medicaid, BCBS, Aetna, UHC, Cigna, Humana and more.
+ [h3] 📄 KPI Dashboard Template
+ The 12 KPIs every practice owner should track weekly — with formulas and benchmark ranges by specialty.
+ [h3] 📄 HIPAA & SOC 2 Vendor Checklist
+ What to ask any billing vendor before handing over PHI. BAAs, audit logs, encryption, breach response, access controls.
+ [h3] 📄 No Surprises Act Quick Guide
+ Good-faith estimates, IDR process, balance billing rules, and the workflows that keep you compliant.
+ <section id=None class='cta-band'>
+ [h2] Want a Personalized Resource Pack?
+ We'll send specialty-specific benchmarks, denial trends, and a free revenue audit tailored to your practice. <button onclick=go('contact') type=None>Request My Free Pack →© 2025 Health Billing | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721 | <a href=mailto:hello@healthbilling.us onclick=None>hello@healthbilling.us | ← Home
+
+########## PAGE #contact (class='pg')
+ <section id=None class='svc-hero'>← Home
+ [h2] Get Your Free Revenue Audit
+ Fill out the form and one of our revenue cycle specialists will be in touch within 4 business hours — at no cost and no obligation.
+ <section id=None class='content-section'>
+ [h3] Tell Us About Your Practice
+ <FORM id=leadForm onsubmit=return submitLead(event) action=None method=None>
+ <input name=access_key id=None type=hidden value=YOUR_WEB3FORMS_ACCESS_KEY min=None max=None step=None placeholder=None required=False oninput=None onchange=None>
+ <input name=subject id=None type=hidden value=New Lead — Health Billing Revenue Audit Request min=None max=None step=None placeholder=None required=False oninput=None onchange=None>
+ <input name=from_name id=None type=hidden value=HealthBilling.us Website min=None max=None step=None placeholder=None required=False oninput=None onchange=None>
+ <input name=botcheck id=None type=checkbox value=None min=None max=None step=None placeholder=None required=False oninput=None onchange=None>Practice / Organization Name
+ <input name=practice id=None type=text value=None min=None max=None step=None placeholder=e.g. Atlanta Cardiology Group required=True oninput=None onchange=None>First Name
+ <input name=first_name id=None type=text value=None min=None max=None step=None placeholder=First name required=True oninput=None onchange=None>Last Name
+ <input name=last_name id=None type=text value=None min=None max=None step=None placeholder=Last name required=True oninput=None onchange=None>Email Address
+ <input name=email id=None type=email value=None min=None max=None step=None placeholder=your@email.com required=True oninput=None onchange=None>Phone Number
+ <input name=phone id=None type=tel value=None min=None max=None step=None placeholder=+1 (555) 000-0000 required=True oninput=None onchange=None>Specialty / Practice Type
+ <select name=specialty id=None type=None value=None min=None max=None step=None placeholder=None required=True oninput=None onchange=None> <option value= selected=False>Select specialty... <option value=None selected=False>Primary Care / Internal Medicine <option value=None selected=False>Cardiology <option value=None selected=False>Orthopedics <option value=None selected=False>Nephrology <option value=None selected=False>Oncology / Hematology <option value=None selected=False>Behavioral Health / Psychiatry <option value=None selected=False>Neurology / Neurosurgery <option value=None selected=False>Radiology <option value=None selected=False>Pathology / Laboratory <option value=None selected=False>Ophthalmology <option value=None selected=False>OB/GYN <option value=None selected=False>Pediatrics <option value=None selected=False>Urgent Care <option value=None selected=False>Emergency Medicine <option value=None selected=False>Hospital / Health System <option value=None selected=False>Physical / Occupational Therapy <option value=None selected=False>OtherService You're Most Interested In
+ <select name=service id=None type=None value=None min=None max=None step=None placeholder=None required=True oninput=None onchange=None> <option value= selected=False>Select service... <option value=None selected=False>Medical Billing (Full Service) <option value=None selected=False>Revenue Cycle Management <option value=None selected=False>Medical Coding <option value=None selected=False>Provider Credentialing <option value=None selected=False>Denial Management <option value=None selected=False>AR Recovery <option value=None selected=False>Medical Transcription <option value=None selected=False>Full Outsourcing / All ServicesTell Us About Your Current Challenges
+ <textarea name=message id=None type=None value=None min=None max=None step=None placeholder=e.g. High denial rates, aging AR, credentialing delays, switching billing companies... required=False oninput=None onchange=None> <button onclick=None type=submit>Request My Free Revenue Audit →
+ 
+ HIPAA-secure. No commitment required. Response within 4 business hours.
+ [h3] Get in Touch Directly📞Phone <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721✉️Email <a href=mailto:hello@healthbilling.us onclick=None>hello@healthbilling.us📍Address97 Newkirk Street / Jersey City, NJ 07306⏰Office HoursMon–Fri: 8:00 AM – 8:00 PM ET / Saturday: 9:00 AM – 2:00 PM ET
+ [h4] What Happens After You Submit?
+ - A revenue cycle specialist contacts you within 4 hours
+ - We schedule a 30-minute discovery call at your convenience
+ - We review your current billing data (no PHI required initially)
+ - We deliver a written assessment with specific revenue opportunity numbers
+ - You decide if and when to proceed — zero pressure🏆America's Most Trusted Medical Billing PartnerRated #1 for clean claim rate, denial resolution, and client satisfaction — three years running.© 2025 Health Billing LLC | 97 Newkirk Street, Jersey City, NJ 07306 | <a href=tel:+14159396721 onclick=None>+1 (415) 939-6721← Back to Home
