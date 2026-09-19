@@ -8,7 +8,7 @@
  * Usage: NEXT_PUBLIC_BASE_PATH=/health node scripts/build-pages.mjs
  */
 import { spawnSync } from "node:child_process";
-import { existsSync, renameSync, writeFileSync } from "node:fs";
+import { existsSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const root = process.cwd();
@@ -21,6 +21,10 @@ if (existsSync(parked)) {
 }
 
 renameSync(apiDir, parked);
+// A preceding `next dev` can leave route validators under `.next/dev` that
+// still reference the parked POST route. Build caches are disposable, so start
+// the export from a clean Next output directory.
+rmSync(join(root, ".next"), { recursive: true, force: true });
 let status = 1;
 try {
   const result = spawnSync("npx", ["next", "build"], {
@@ -30,6 +34,10 @@ try {
   });
   status = result.status ?? 1;
 } finally {
+  // The parked directory is the authoritative copy. A development file watcher
+  // may recreate the original path while the export runs, so clear that exact
+  // path before restoring the source tree deterministically.
+  rmSync(apiDir, { recursive: true, force: true });
   renameSync(parked, apiDir);
 }
 

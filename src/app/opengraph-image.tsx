@@ -19,7 +19,7 @@ export default function OpenGraphImage() {
           justifyContent: "space-between",
           padding: 72,
           color: "#fff",
-          background: "linear-gradient(135deg,#0b1f3a 0%,#0f2f57 55%,#124c8f 100%)",
+          background: "linear-gradient(135deg,#061a35 0%,#0b2648 58%,#00855d 150%)",
           fontFamily: "sans-serif",
         }}
       >
@@ -29,15 +29,16 @@ export default function OpenGraphImage() {
               width: 72,
               height: 72,
               borderRadius: 18,
-              background: "linear-gradient(135deg,#1e7be0,#0f427c)",
+              background: "#ffffff",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               position: "relative",
             }}
           >
-            <div style={{ position: "absolute", width: 10, height: 40, background: "#fff", borderRadius: 3 }} />
-            <div style={{ position: "absolute", width: 40, height: 10, background: "#fff", borderRadius: 3 }} />
+            <div style={{ position: "absolute", width: 10, height: 40, background: "#0b2648", borderRadius: 2 }} />
+            <div style={{ position: "absolute", width: 40, height: 10, background: "#0b2648", borderRadius: 2 }} />
+            <div style={{ position: "absolute", right: 8, top: 9, width: 30, height: 8, background: "#00855d", borderRadius: 6, transform: "rotate(-42deg)" }} />
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div style={{ fontSize: 40, fontWeight: 700 }}>{site.name}</div>
@@ -46,18 +47,18 @@ export default function OpenGraphImage() {
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
           <div style={{ fontSize: 68, fontWeight: 700, lineHeight: 1.05, maxWidth: 900 }}>
-            Stop Losing Revenue. Start Getting Paid What You Deserve.
+            More clarity across your revenue cycle.
           </div>
           <div style={{ fontSize: 26, color: "rgba(255,255,255,.75)", maxWidth: 900 }}>
-            Medical billing, RCM, coding, credentialing & denial management for 4,800+ providers across all 50 states.
+            Medical billing, coding, claims, denials, credentialing and receivables support from Houston, Texas.
           </div>
         </div>
         <div style={{ display: "flex", gap: 40, fontSize: 22, color: "rgba(255,255,255,.8)" }}>
-          <span>98.2% first-pass claim rate</span>
+          <span>HIPAA-compliant workflows</span>
           <span>·</span>
-          <span>$2.4B+ recovered</span>
+          <span>Clear communication</span>
           <span>·</span>
-          <span>500+ payers</span>
+          <span>Structured follow-up</span>
         </div>
       </div>
     ),

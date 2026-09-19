@@ -5,70 +5,49 @@ export const denialManagement: ServicePage = {
   slug: "denial-management",
   path: "/services/denial-management",
   name: "Denial Management",
-  navSub: "Root-cause + appeals",
+  navSub: "Root-cause and follow-up support",
   icon: "shield-check",
-  homeBlurb:
-    "93.4% denial resolution rate. We appeal every recoverable dollar — including claims your current team has written off.",
-  hubBlurb:
-    "Root-cause analysis, appeal writing, and re-submission. 93.4% resolution rate. No denied claim left unworked.",
-  meta: {
-    title: "Denial Management & Claims Appeals Services",
-    description:
-      "The average provider writes off 3–5% of gross revenue as uncollectible denials. That's money you've earned — and we recover it. Our resolution rate is 93.4%.",
-  },
+  homeBlurb: "Classify denials, identify causes, organize correction or appeal work and feed recurring issues back into the workflow.",
+  hubBlurb: "Move denied claims through documented research, correction, appeal and prevention steps when supported by the facts.",
+  meta: { title: "Medical Claim Denial Management Services", description: "Denial management support for classification, root-cause review, corrected claims, appeals and recurring-issue prevention." },
   hero: {
-    breadcrumb: [
-      { label: "Home", href: routes.home },
-      { label: "Services", href: routes.services },
-    ],
-    title: ["Denial Management &", "Claims Appeals Services"],
-    lead: "The average provider writes off 3–5% of gross revenue as uncollectible denials. That's money you've earned — and we recover it. Our resolution rate is 93.4%.",
-    stats: [
-      { value: "93.4%", label: "Denial resolution rate" },
-      { value: "72hr", label: "Appeal turnaround" },
-      { value: "52%", label: "Denial rate reduction" },
-      { value: "$380K", label: "Avg annual recovery/client" },
-    ],
+    breadcrumb: [{ label: "Home", href: routes.home }, { label: "Services", href: routes.services }],
+    title: ["Denial Management Focused", "on Cause and Next Action"],
+    lead: "A denial is a payer decision that needs interpretation. Revplus helps organize the evidence, correction or appeal path and follow-up without promising that every claim can be recovered.",
   },
   blocks: [
     {
       type: "intro",
-      eyebrow: "Denial Management",
-      title: "Most Denied Claims Are Recoverable. We Prove It.",
-      lead: "65% of denied claims are never reworked — they're written off. Health Billing's denial management team doesn't accept denial as a final answer. We investigate, document, appeal, and escalate until every recoverable dollar is collected.",
+      eyebrow: "Denial Workflow",
+      title: "Work the Account—and Learn From the Pattern",
+      lead: "Useful denial management addresses the current claim while also asking whether registration, authorization, documentation, coding or submission behavior needs attention.",
       bullets: [
-        "Root-cause categorization of all denial types",
-        "First-level appeal letters with clinical documentation",
-        "Second-level and peer-to-peer review coordination",
-        "External appeals and state Insurance Department complaints",
-        "Authorization and medical necessity appeals",
-        "Timely filing appeals with proof of prior submission",
-        "Underpayment identification and payer dispute letters",
-        "Monthly denial scorecards and root-cause reports",
-        "Front-end process improvements to prevent recurrence",
+        "Denial reason and adjustment-code classification",
+        "Eligibility, authorization and coordination-of-benefits research",
+        "Coding and documentation question routing",
+        "Corrected-claim preparation support",
+        "Appeal packet organization when an appeal is appropriate",
+        "Timely-filing and submission-history review",
+        "Payer follow-up and status documentation",
+        "Recurring-cause reporting for process discussion",
       ],
-      aside: {
-        kind: "blocks",
-        items: [
-          {
-            title: "Top 7 Denial Reasons — And How We Fix Them",
-            body: "1. Missing/invalid patient info → front-end verification. 2. Authorization issues → retroactive auth + medical necessity appeals. 3. Duplicates → claim history audit. 4. Timely filing → recovery with proof of submission. 5. Coding errors → corrected claims with certified coder review. 6. Medical necessity → clinical appeal letters. 7. COB issues → proper claim sequencing.",
-          },
-          {
-            title: "Prevention Is Better Than Cure",
-            body: "We don't just recover denied claims — we eliminate the conditions that cause them. Monthly denial reports identify patterns, and we work with your front desk and clinical teams to stop errors from recurring. Most clients see 50%+ reduction in denial rate within 6 months.",
-          },
-          {
-            title: "Government Payer Appeals",
-            body: "Medicare and Medicaid appeals have strict processes — Redeterminations, Reconsiderations, ALJ hearings. We navigate every level with precision, maximizing recoveries from government payer denials.",
-          },
-        ],
-      },
+      aside: { kind: "blocks", items: [
+        { title: "Interpret", body: "Confirm what the payer response says and what additional facts are needed." },
+        { title: "Choose the Path", body: "Route the account to correction, documentation, appeal, patient or closure review as appropriate." },
+        { title: "Reduce Repeat Work", body: "Group recurring causes so the practice can address upstream patterns." },
+      ] },
+    },
+    {
+      type: "steps",
+      title: "From Denial to Documented Resolution",
+      items: [
+        { title: "Classify", body: "Record the reason, payer, service date, balance and filing context." },
+        { title: "Research", body: "Review available claim history, documentation and payer communication." },
+        { title: "Act", body: "Prepare the supported correction, appeal, requested information or other response." },
+        { title: "Follow Up", body: "Track the payer response and maintain a next action until the account reaches a documented outcome." },
+        { title: "Report", body: "Explain high-frequency causes and where upstream workflow changes may help." },
+      ],
     },
   ],
-  cta: {
-    title: "How Much Denied Revenue Are You Sitting On?",
-    lead: "Let us review your last 90 days of denied claims and show you exactly how much is recoverable — completely free.",
-    button: { label: "Request Free Denial Analysis", href: routes.freeAudit },
-  },
+  cta: { title: "Understand What Your Denials Are Saying", lead: "Start with the causes, queues and handoffs creating the most repeat work.", button: { label: "Discuss Denial Management", href: routes.freeAudit } },
 };

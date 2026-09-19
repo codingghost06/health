@@ -12,7 +12,7 @@ export function HomeHero({ hero }: { hero: HomeContent["hero"] }) {
       <Container size="wide" className="relative grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16 lg:py-28">
         <div>
           <Eyebrow tone="gold">
-            <Icon name="trophy" className="size-3.5" strokeWidth={2.4} />
+            <Icon name="shield-check" className="size-3.5" strokeWidth={2.4} />
             {hero.badge}
           </Eyebrow>
           <h1 className="mt-6 font-display text-[2.6rem] leading-[1.04] text-white sm:text-[3.4rem] lg:text-[4rem]">
@@ -39,21 +39,41 @@ export function HomeHero({ hero }: { hero: HomeContent["hero"] }) {
           </div>
         </div>
 
-        <dl className="grid grid-cols-2 overflow-hidden rounded-2xl border border-white/15 bg-white/[0.07] shadow-float backdrop-blur-md animate-fade-up delay-4" aria-label="Key performance figures">
-          {hero.stats.map((s, i) => (
-            <div
-              key={s.label}
-              className={[
-                "flex flex-col-reverse gap-1.5 p-6 sm:p-7",
-                i % 2 === 1 ? "border-l border-white/12" : "",
-                i >= 2 ? "border-t border-white/12" : "",
-              ].join(" ")}
-            >
-              <dt className="text-[13px] font-medium text-brand-200/90">{s.label}</dt>
-              <dd className="font-display text-[2.2rem] leading-none tabular-nums text-white sm:text-[2.6rem]">{s.value}</dd>
+        <div className="relative animate-fade-up delay-4">
+          <div className="absolute -inset-8 rounded-full bg-teal-500/15 blur-3xl" aria-hidden="true" />
+          <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-white/[0.09] p-5 shadow-float backdrop-blur-md sm:p-7">
+            <div className="flex items-center justify-between gap-4">
+              <div>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-teal-200">Revenue cycle view</p>
+                <p className="mt-1 text-[1.08rem] font-semibold text-white">From encounter to resolution</p>
+              </div>
+              <span className="flex size-10 items-center justify-center rounded-xl bg-teal-400/15 text-teal-200 ring-1 ring-inset ring-teal-300/25">
+                <Icon name="activity" className="size-5" />
+              </span>
             </div>
-          ))}
-        </dl>
+
+            <ol className="mt-7 grid gap-3" aria-label="Simplified claim workflow">
+              {["Documentation review", "Coding and claim preparation", "Payer response tracking", "Denial and AR follow-up"].map((label, i) => (
+                <li key={label} className="flex items-center gap-3 rounded-xl border border-white/10 bg-navy-950/25 px-4 py-3">
+                  <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-teal-400/15 text-[12px] font-bold text-teal-100 ring-1 ring-inset ring-teal-300/20">
+                    {i + 1}
+                  </span>
+                  <span className="flex-1 text-[13.5px] font-medium text-white/85">{label}</span>
+                  <Icon name="check" className="size-4 text-teal-300" />
+                </li>
+              ))}
+            </ol>
+
+            <dl className="mt-5 grid grid-cols-2 gap-2 border-t border-white/10 pt-5">
+              {hero.stats.map((s) => (
+                <div key={s.label} className="rounded-lg bg-white/[0.06] px-3 py-3">
+                  <dt className="text-[11px] leading-snug text-white/55">{s.label}</dt>
+                  <dd className="mt-1 text-[13.5px] font-semibold text-white">{s.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
       </Container>
     </section>
   );

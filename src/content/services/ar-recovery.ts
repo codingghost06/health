@@ -4,73 +4,49 @@ import { routes } from "@/content/site";
 export const arRecovery: ServicePage = {
   slug: "ar-recovery",
   path: "/services/ar-recovery",
-  name: "AR Recovery",
-  navSub: "Aged AR clean-up",
+  name: "Accounts Receivable Follow-Up",
+  navSub: "Aged AR review and action",
   icon: "wallet",
-  homeBlurb:
-    "Aging AR worked aggressively. 60, 90, 120+ day buckets cleared. 87% recovery rate on 90+ day balances.",
-  hubBlurb:
-    "Aggressive 60/90/120+ day bucket follow-up. 87% recovery rate on aged balances. No cherry-picking.",
-  meta: {
-    title: "Accounts Receivable (AR) Recovery & Follow-Up",
-    description:
-      "Aging AR is silent revenue leakage. Our AR recovery team hunts down every balance — regardless of age — and brings it to resolution. 87% recovery on 90+ day AR.",
-  },
+  homeBlurb: "Segment aging receivables, identify the next supported action and document payer or patient follow-up.",
+  hubBlurb: "Bring structure to older balances with account research, prioritization, follow-up and closure review.",
+  meta: { title: "Medical Accounts Receivable Follow-Up Services", description: "Medical AR follow-up support for aging analysis, payer research, patient-balance routing and documented account resolution." },
   hero: {
-    breadcrumb: [
-      { label: "Home", href: routes.home },
-      { label: "Services", href: routes.services },
-    ],
-    title: ["Accounts Receivable (AR)", "Recovery & Follow-Up"],
-    lead: "Aging AR is silent revenue leakage. Our AR recovery team hunts down every balance — regardless of age — and brings it to resolution.",
-    stats: [
-      { value: "18 days", label: "AR days post-engagement" },
-      { value: "87%", label: "Recovery on 90+ day AR" },
-      { value: "100%", label: "All claims worked" },
-    ],
+    breadcrumb: [{ label: "Home", href: routes.home }, { label: "Services", href: routes.services }],
+    title: ["Accounts Receivable Follow-Up", "With a Defined Next Action"],
+    lead: "Older balances need more than repeated status checks. Revplus helps practices segment receivables, research account history and move appropriate actions forward.",
   },
   blocks: [
     {
       type: "intro",
-      eyebrow: "AR Services",
-      title: "We Work Every Dollar. No Balance Left Behind.",
-      lead: "Most billing companies prioritize easy wins. The hard stuff — old claims, complex denials, government payer disputes — gets ignored. We work all of it. Our AR specialists are assigned by payer type and aging bucket with specific protocols for each category.",
+      eyebrow: "AR Support",
+      title: "Separate the Work Before You Prioritize It",
+      lead: "Age alone does not explain why a balance remains open. The workflow also considers payer, denial or rejection history, filing limits, documentation, patient responsibility and prior action.",
       bullets: [
-        "Insurance AR follow-up for all payer types",
-        "Patient balance resolution and payment plan setup",
-        "60/90/120/180+ day aging bucket management",
-        "Payer portal follow-up and phone escalations",
-        "Re-billing and corrected claim submission",
-        "Secondary insurance identification and billing",
-        "Write-off review before any finalization",
-        "AR cleanup projects for practices switching billing companies",
+        "AR aging analysis by payer and age bucket",
+        "Claim and payer-response history review",
+        "Unpaid-claim status follow-up",
+        "Corrected-claim or information-request routing",
+        "Secondary coverage and coordination-of-benefits review",
+        "Patient-responsibility workflow support within scope",
+        "Closure and write-off recommendation documentation",
+        "Transition and inherited-AR project planning",
       ],
-      aside: {
-        kind: "timeline",
-        items: [
-          {
-            title: "AR Analysis & Stratification",
-            body: "We segment all open AR by payer, aging bucket, denial reason, and dollar value. Each segment gets a tailored follow-up protocol.",
-          },
-          {
-            title: "Insurance Follow-Up",
-            body: "Daily payer portal checks, outbound calls, and online dispute submissions. We don't wait — we chase payers on a set schedule.",
-          },
-          {
-            title: "Patient Balance Management",
-            body: "Automated statements, outbound calls, and payment plan setup. Collecting patient balances compliantly without damaging relationships.",
-          },
-          {
-            title: "Resolution & Write-Off Review",
-            body: "Every balance resolved, appealed, or recommended for write-off with full documentation. No balance written off without manager review.",
-          },
-        ],
-      },
+      aside: { kind: "timeline", items: [
+        { title: "Segment", body: "Group accounts by payer, age, cause, balance and actionability." },
+        { title: "Research", body: "Review submission history, payer responses and missing dependencies." },
+        { title: "Act", body: "Use the supported payer, correction, appeal, patient or closure path." },
+        { title: "Document", body: "Record the outcome and keep unresolved items tied to a next-contact or decision point." },
+      ] },
+    },
+    {
+      type: "faq",
+      title: "AR Follow-Up Questions",
+      items: [
+        { q: "Can every old balance be recovered?", a: ["No. Collectability depends on filing limits, documentation, contracts, coverage, payer decisions, patient responsibility and prior actions. Revplus helps identify the appropriate path and document the outcome."] },
+        { q: "Can Revplus review AR from a previous billing setup?", a: ["Potentially. The first step is to assess data access, account history, scope and available documentation so a realistic project can be defined."] },
+        { q: "How are write-offs handled?", a: ["Closure recommendations should be supported by account history and the practice's policies. Revplus does not present arbitrary write-offs as recovered revenue."] },
+      ],
     },
   ],
-  cta: {
-    title: "Let Us Work Your Aging AR",
-    lead: "Send us your AR aging report and we'll tell you — for free — exactly how much we can recover and in what timeframe.",
-    button: { label: "Get Free AR Recovery Estimate", href: routes.freeAudit },
-  },
+  cta: { title: "Bring Order to Aging Receivables", lead: "Discuss the age buckets, payer groups or inherited balances your team needs help organizing.", button: { label: "Request an AR Consultation", href: routes.freeAudit } },
 };

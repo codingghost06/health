@@ -152,15 +152,7 @@ export interface Link {
 export interface Metric {
   label: string;
   value: string;
-  /** Bar fill 0–100. */
-  pct: number;
   note: string;
-}
-
-export interface Testimonial {
-  quote: string;
-  name: string;
-  role: string;
 }
 
 export interface HomeContent {
@@ -198,7 +190,7 @@ export interface HomeContent {
     more: Link;
   };
   process: { eyebrow: string; title: string; lead: string; steps: Step[] };
-  testimonials: { eyebrow: string; title: string; items: Testimonial[] };
+  principles: { eyebrow: string; title: string; lead: string; items: Feature[] };
   cta: Cta;
 }
 
@@ -207,12 +199,10 @@ export interface HomeContent {
 /* ---------------------------------------------------------------------- */
 
 export interface ResourceItem {
-  /** Category label (blog) or none. */
+  /** Optional category label. */
   tag?: string;
   title: string;
   body: string;
-  /** Highlighted result line (case studies). */
-  result?: string;
 }
 
 export interface ResourceSection {

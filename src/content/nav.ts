@@ -26,12 +26,12 @@ const servicesMenu: Menu = {
   columns: 3,
   items: [
     ...serviceSummaries.map((s) => ({ label: s.name, href: s.path, sub: s.navSub, icon: s.icon })),
-    { label: "Payer Collections", href: routes.payerCollections, sub: "Payer-specific recovery", icon: "landmark" },
-    { label: "Departments", href: routes.departments, sub: "Inside our operations", icon: "building" },
-    { label: "Insurance Payers", href: routes.payers, sub: "500+ payer network", icon: "clipboard" },
+    { label: "Payer Follow-Up", href: routes.payerCollections, sub: "Organized payer communication", icon: "landmark" },
+    { label: "Workflow Areas", href: routes.departments, sub: "How the work fits together", icon: "building" },
+    { label: "Payer Environments", href: routes.payers, sub: "Common US payer contexts", icon: "clipboard" },
     { label: "All Services", href: routes.services, sub: "Browse the full catalog", icon: "layers" },
   ],
-  footer: { text: "Not sure what you need?", link: { label: "Get a free audit", href: routes.freeAudit } },
+  footer: { text: "Not sure where to begin?", link: { label: "Discuss your workflow", href: routes.freeAudit } },
 };
 
 const specialtiesMenu: Menu = {
@@ -53,17 +53,17 @@ const specialtiesMenu: Menu = {
     { label: "Pain Management", href: `${routes.specialties}#pain-management`, icon: "pill" },
     { label: "Nephrology", href: `${routes.specialties}#nephrology`, icon: "droplets" },
   ],
-  footer: { text: "40+ specialties supported", link: { label: "View all specialties", href: routes.specialties } },
+  footer: { text: "Specialty needs vary by practice", link: { label: "Explore workflows", href: routes.specialties } },
 };
 
 const resourcesMenu: Menu = {
   columns: 1,
   items: [
-    { label: "Blog", href: `${routes.resources}#blog`, sub: "Billing insights & industry updates", icon: "newspaper" },
-    { label: "Case Studies", href: `${routes.resources}#case-studies`, sub: "Real revenue lifts from real practices", icon: "bar-chart" },
-    { label: "Guides & Whitepapers", href: `${routes.resources}#guides`, sub: "Deep-dive playbooks for practices", icon: "book" },
-    { label: "FAQ", href: "/services/medical-billing#faq", sub: "Doctor-focused answers", icon: "message" },
-    { label: "Newsletter", href: `${routes.resources}#resource-pack`, sub: "Monthly RCM brief", icon: "mail" },
+    { label: "Billing Topics", href: `${routes.resources}#billing-topics`, sub: "Plain-language RCM education", icon: "newspaper" },
+    { label: "Workflow Guides", href: `${routes.resources}#guides`, sub: "Practical questions to ask", icon: "book" },
+    { label: "RCM Glossary", href: `${routes.resources}#glossary`, sub: "Common terms explained", icon: "file" },
+    { label: "FAQ", href: "/services/medical-billing#faq", sub: "Service and onboarding answers", icon: "message" },
+    { label: "Planning Calculator", href: routes.calculator, sub: "Model your own assumptions", icon: "bar-chart" },
   ],
 };
 
@@ -71,11 +71,11 @@ export const primaryNav: NavItem[] = [
   { label: "Home", href: routes.home },
   { label: "Services", href: routes.services, menu: servicesMenu },
   { label: "Specialties", href: routes.specialties, menu: specialtiesMenu },
-  { label: "Calculator", href: routes.calculator },
+  { label: "Revenue Cycle", href: "/services/revenue-cycle-management" },
   { label: "Resources", href: routes.resources, menu: resourcesMenu },
 ];
 
-export const navCta = { label: "Free Audit", href: routes.freeAudit };
+export const navCta = { label: "Request a Consultation", href: routes.freeAudit };
 
 export const footerColumns: { title: string; links: MenuItem[] }[] = [
   {
@@ -85,7 +85,7 @@ export const footerColumns: { title: string; links: MenuItem[] }[] = [
   {
     title: "Specialties",
     links: [
-      { label: "All 40+ Specialties", href: routes.specialties },
+      { label: "Specialty Workflows", href: routes.specialties },
       { label: "Nephrology", href: `${routes.specialties}#nephrology` },
       { label: "Cardiology", href: `${routes.specialties}#cardiology` },
       { label: "Behavioral Health", href: `${routes.specialties}#behavioral-health` },
@@ -96,16 +96,14 @@ export const footerColumns: { title: string; links: MenuItem[] }[] = [
     ],
   },
   {
-    title: "Payers",
+    title: "Explore",
     links: [
-      { label: "Medicare & Medicaid", href: `${routes.payers}#government` },
-      { label: "Blue Cross Blue Shield", href: `${routes.payers}#bcbs` },
-      { label: "Aetna", href: `${routes.payers}#aetna` },
-      { label: "UnitedHealthcare", href: `${routes.payers}#unitedhealthcare` },
-      { label: "Cigna", href: `${routes.payers}#cigna` },
-      { label: "Humana", href: `${routes.payers}#humana` },
-      { label: "All 500+ Payers", href: routes.payers },
-      { label: "Free Audit", href: routes.freeAudit },
+      { label: "Payer Environments", href: routes.payers },
+      { label: "Payer Follow-Up", href: routes.payerCollections },
+      { label: "Workflow Areas", href: routes.departments },
+      { label: "Planning Calculator", href: routes.calculator },
+      { label: "Resources", href: routes.resources },
+      { label: "Consultation", href: routes.freeAudit },
     ],
   },
 ];

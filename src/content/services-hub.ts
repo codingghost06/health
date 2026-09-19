@@ -3,25 +3,25 @@ import { routes } from "@/content/site";
 
 export const servicesHub = {
   meta: {
-    title: "Complete Revenue Cycle Services",
+    title: "Medical Billing & Revenue Cycle Services",
     description:
-      "Every service your practice needs to maximize collections, cut denials, and stay compliant — medical billing, coding, RCM, credentialing, denial management, AR recovery and more.",
+      "Explore medical billing, coding, RCM, credentialing, denial management, claims, transcription and accounts receivable support from Revplus.",
   },
   hero: {
     breadcrumb: [{ label: "Home", href: routes.home }],
-    title: ["Complete Revenue Cycle Services"],
-    lead: "Every service your practice needs to maximize collections, cut denials, and stay compliant — all from one dedicated team.",
+    title: ["Revenue Cycle Support", "With a Defined Scope"],
+    lead: "Choose help for one operational area or discuss how multiple services can work together around your existing team and systems.",
   } satisfies PageHero,
   /** Ninth card on the hub that has no dedicated page. */
   extra: {
     icon: "shield-check",
-    title: "Compliance & Audit Support",
-    body: "Internal coding audits, HIPAA risk assessments, OIG compliance programs, and documentation quality reviews.",
-    link: { label: "Contact Us", href: routes.freeAudit },
+    title: "Workflow Review",
+    body: "Map responsibilities, handoffs, open queues and reporting needs before deciding which service area to address first.",
+    link: { label: "Discuss your workflow", href: routes.freeAudit },
   } satisfies ListCard & { link: { label: string; href: string } },
   cta: {
-    title: "Not Sure Where to Start?",
-    lead: "Let our specialists run a free assessment of your current billing — we'll show you exactly what's leaking and how to fix it.",
-    button: { label: "Request Free Assessment", href: routes.freeAudit },
+    title: "Not Sure Where to Begin?",
+    lead: "Describe the part of your revenue cycle that is hardest to see, manage or follow up. We will help define a sensible starting point.",
+    button: { label: "Request a Consultation", href: routes.freeAudit },
   } satisfies Cta,
 };

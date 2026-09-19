@@ -4,35 +4,36 @@
 /* Design tokens                                                        */
 /* ------------------------------------------------------------------ */
 @theme {
-  /* Brand blues (refined from the reference #1565C0 family) */
-  --color-brand-50: #f2f7fd;
-  --color-brand-100: #e3eefb;
-  --color-brand-200: #c5dbf5;
-  --color-brand-300: #93bdeb;
-  --color-brand-400: #4f93dc;
-  --color-brand-500: #1e7be0;
-  --color-brand-600: #1565c0;
-  --color-brand-700: #10529c;
-  --color-brand-800: #0f427c;
-  --color-brand-900: #0f3562;
+  /* Revplus green, derived from the official mark */
+  --color-brand-50: #effaf6;
+  --color-brand-100: #d8f3e8;
+  --color-brand-200: #afe6d1;
+  --color-brand-300: #78d2b3;
+  --color-brand-400: #39b78e;
+  --color-brand-500: #0a9c70;
+  --color-brand-600: #00855d;
+  --color-brand-700: #006b4c;
+  --color-brand-800: #07563f;
+  --color-brand-900: #084735;
 
   /* Navy — heroes, footer, headings */
-  --color-navy-700: #163b66;
-  --color-navy-800: #0f2a4c;
-  --color-navy-900: #0b1f3a;
-  --color-navy-950: #07152a;
+  --color-navy-700: #173b64;
+  --color-navy-800: #102f54;
+  --color-navy-900: #0b2648;
+  --color-navy-950: #061a35;
 
   /* Teal accent — success, secondary emphasis */
   --color-teal-50: #e6f5f3;
   --color-teal-100: #cceae6;
-  --color-teal-500: #10a394;
-  --color-teal-600: #0e8c7f;
-  --color-teal-700: #0b7267;
+  --color-teal-300: #83ddc1;
+  --color-teal-500: #12a77b;
+  --color-teal-600: #078a65;
+  --color-teal-700: #066c51;
 
-  /* Gold — hero badge, stars */
-  --color-gold-300: #f0dc8c;
-  --color-gold-400: #e2c35a;
-  --color-gold-500: #c9a227;
+  /* Legacy accent names map to restrained mint tones. */
+  --color-gold-300: #bdebd9;
+  --color-gold-400: #75d0ae;
+  --color-gold-500: #0a9c70;
 
   /* Neutrals */
   --color-ink: #152130;
@@ -50,8 +51,8 @@
   --color-success-50: #e6f6ef;
 
   /* Typography */
-  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Avenir Next", Avenir, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
 
   /* Radii */
   --radius-md: 0.75rem;
@@ -60,8 +61,8 @@
   --radius-2xl: 1.75rem;
 
   /* Shadows (tinted with brand blue) */
-  --shadow-card: 0 1px 2px rgba(15, 42, 76, 0.04), 0 2px 12px rgba(21, 101, 192, 0.06);
-  --shadow-card-hover: 0 6px 24px rgba(21, 101, 192, 0.12), 0 2px 6px rgba(15, 42, 76, 0.06);
+  --shadow-card: 0 1px 2px rgba(11, 38, 72, 0.04), 0 2px 14px rgba(11, 38, 72, 0.06);
+  --shadow-card-hover: 0 10px 28px rgba(11, 38, 72, 0.11), 0 2px 6px rgba(0, 133, 93, 0.06);
   --shadow-float: 0 12px 40px rgba(11, 31, 58, 0.14);
   --shadow-glow: 0 10px 36px rgba(30, 123, 224, 0.35);
 
@@ -163,7 +164,7 @@
   text-wrap: balance;
 }
 
-/* Display headings: Cormorant needs heavier weight + tighter tracking */
+/* Display headings use the platform's high-quality editorial serif stack. */
 @utility font-display {
   font-family: var(--font-display);
   font-weight: 700;
@@ -182,20 +183,20 @@
 /* Hero gradients */
 @utility bg-hero {
   background-image:
-    radial-gradient(70% 90% at 85% 10%, rgba(30, 123, 224, 0.55) 0%, transparent 60%),
-    radial-gradient(50% 70% at 10% 95%, rgba(14, 140, 127, 0.35) 0%, transparent 60%),
-    linear-gradient(135deg, #0b1f3a 0%, #0f2f57 55%, #124c8f 100%);
+    radial-gradient(70% 90% at 90% 10%, rgba(0, 133, 93, 0.34) 0%, transparent 62%),
+    radial-gradient(50% 70% at 8% 100%, rgba(18, 167, 123, 0.16) 0%, transparent 60%),
+    linear-gradient(135deg, #061a35 0%, #0b2648 58%, #12385e 100%);
 }
 
 @utility bg-cta {
   background-image:
-    radial-gradient(60% 100% at 100% 0%, rgba(14, 140, 127, 0.5) 0%, transparent 60%),
-    linear-gradient(120deg, #0f3562 0%, #1565c0 55%, #10a394 130%);
+    radial-gradient(60% 100% at 100% 0%, rgba(18, 167, 123, 0.45) 0%, transparent 60%),
+    linear-gradient(120deg, #061a35 0%, #0b2648 58%, #00855d 135%);
 }
 
 /* Gradient word in hero */
 @utility text-gradient-gold {
-  background-image: linear-gradient(120deg, #9ad7ff 0%, #f0dc8c 100%);
+  background-image: linear-gradient(120deg, #ffffff 0%, #83ddc1 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

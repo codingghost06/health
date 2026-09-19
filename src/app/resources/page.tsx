@@ -42,13 +42,6 @@ export default function ResourcesPage() {
                     {item.title}
                   </h3>
                   <p className="mt-2 flex-1 text-[0.95rem] leading-relaxed text-slate-600">{item.body}</p>
-                  {item.result ? (
-                    <p className="mt-4 inline-flex items-center gap-1.5 self-start rounded-md bg-teal-50 px-2.5 py-1 text-[13px] font-semibold text-teal-700">
-                      <Icon name="trending-up" className="size-3.5" strokeWidth={2.4} />
-                      {item.result.replace(/^[↑↓]\s*/, "")}
-                    </p>
-                  ) : null}
-                  {section.id !== "case-studies" ? <p className="mt-4 text-[12.5px] font-medium text-slate-400">Coming soon</p> : null}
                 </Card>
               </li>
             ))}

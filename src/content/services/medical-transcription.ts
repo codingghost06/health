@@ -5,70 +5,51 @@ export const medicalTranscription: ServicePage = {
   slug: "medical-transcription",
   path: "/services/medical-transcription",
   name: "Medical Transcription",
-  navSub: "Medical transcription",
+  navSub: "Clinical documentation support",
   icon: "mic",
-  homeBlurb:
-    "99.5% accuracy. HIPAA-secure. Direct EHR delivery. STAT 4-hour and standard 24-hour turnaround options.",
-  hubBlurb:
-    "99.5%+ accuracy. HIPAA-secure. Direct EHR integration. STAT 4-hour turnaround available.",
-  meta: {
-    title: "Medical Transcription Services HIPAA-Secure & Accurate",
-    description:
-      "99.5%+ accuracy. Fast turnaround. Direct EHR integration. We turn your dictations into structured, compliant clinical documentation — reliably. HIPAA-secure.",
-  },
+  homeBlurb: "Convert dictated clinical content into organized documentation through a scoped, HIPAA-compliant workflow.",
+  hubBlurb: "Support clinical documentation preparation with clear templates, review steps and privacy-conscious handling.",
+  meta: { title: "HIPAA-Compliant Medical Transcription Services", description: "Medical transcription support using HIPAA-compliant workflows, agreed document templates and defined quality-review steps." },
   hero: {
-    breadcrumb: [
-      { label: "Home", href: routes.home },
-      { label: "Services", href: routes.services },
-    ],
-    title: ["Medical Transcription Services", "HIPAA-Secure & Accurate"],
-    lead: "99.5%+ accuracy. Fast turnaround. Direct EHR integration. We turn your dictations into structured, compliant clinical documentation — reliably.",
-    stats: [
-      { value: "99.5%+", label: "Accuracy rate" },
-      { value: "4hr STAT", label: "Emergency TAT" },
-      { value: "100+", label: "EHR integrations" },
-      { value: "HIPAA", label: "Fully compliant + BAA" },
-    ],
+    breadcrumb: [{ label: "Home", href: routes.home }, { label: "Services", href: routes.services }],
+    title: ["Medical Transcription", "Built Around Your Documentation Needs"],
+    lead: "Revplus supports the preparation of clinical documentation from dictated content using agreed formats, review expectations and HIPAA-compliant handling of protected health information.",
   },
   blocks: [
     {
       type: "intro",
-      eyebrow: "Transcription Services",
-      title: "Clinical Documentation Done Right. Every Time.",
-      lead: "Poor documentation causes coding errors, medical necessity denials, audit exposure, and clinical communication failures. Our transcriptionists are trained across 40+ specialties, producing documentation that is accurate, complete, and billing-ready.",
+      eyebrow: "Transcription Support",
+      title: "Define the Document, Delivery and Review Standard First",
+      lead: "Transcription needs vary by specialty, note type, volume, platform and urgency. Revplus confirms those requirements before offering a service schedule.",
       bullets: [
-        "Acute care and ambulatory transcription",
-        "Discharge summaries and operative reports",
-        "Office visit and consult notes",
-        "Radiology and pathology reports",
-        "Psychiatric evaluations and therapy notes",
-        "Emergency medicine documentation",
-        "PT, OT, and speech therapy notes",
-        "Direct EHR upload via HL7 and direct interfaces",
-        "STAT, 24-hour, and standard TAT options",
+        "Office notes and consultation documentation",
+        "Procedure and operative report formatting",
+        "Discharge and summary document support",
+        "Radiology or pathology report formatting where scoped",
+        "Specialty-specific templates supplied or approved by the practice",
+        "Quality-review steps matched to the engagement",
+        "Secure delivery method planning",
+        "HIPAA-compliant handling of protected health information",
       ],
-      aside: {
-        kind: "blocks",
-        items: [
-          {
-            title: "Human + AI-Assisted Workflow",
-            body: "AI-assisted transcription as a first pass, then every document reviewed and quality-assured by an experienced human transcriptionist. AI speed at human accuracy levels.",
-          },
-          {
-            title: "HIPAA Security You Can Count On",
-            body: "256-bit AES encryption in transit and at rest. Signed BAA. Role-based access controls. Regular security audits. Patient data protected at every step.",
-          },
-          {
-            title: "Turnaround Times That Match Your Workflow",
-            body: "STAT (4 hours), Priority (12 hours), and Standard (24 hours) options. Customizable scheduling to match your dictation volume and clinical needs.",
-          },
-        ],
-      },
+      aside: { kind: "blocks", items: [
+        { title: "Input", body: "Agree how dictated content and supporting context are provided." },
+        { title: "Format", body: "Use approved templates, terminology and document destinations." },
+        { title: "Review", body: "Apply the quality checks and exception-handling process defined for the engagement." },
+      ] },
+    },
+    {
+      type: "cards",
+      title: "Questions We Clarify During Scoping",
+      columns: 3,
+      items: [
+        { icon: "file", title: "Document Types", body: "Which notes, reports or summaries are included?" },
+        { icon: "timer", title: "Turnaround Needs", body: "What schedule is operationally necessary and realistically supportable?" },
+        { icon: "layers", title: "Templates", body: "Which specialty, provider or facility formats should be followed?" },
+        { icon: "lock", title: "Secure Handling", body: "How will PHI move through the approved workflow?" },
+        { icon: "clipboard-check", title: "Review Standard", body: "What quality checks and provider sign-off steps are required?" },
+        { icon: "send", title: "Delivery", body: "Where and how should completed documents be returned?" },
+      ],
     },
   ],
-  cta: {
-    title: "Start Receiving Accurate Transcriptions Within 48 Hours",
-    lead: "Setup is fast, integration is seamless, and we offer a free trial for new clients.",
-    button: { label: "Start Free Transcription Trial", href: routes.freeAudit },
-  },
+  cta: { title: "Discuss Your Documentation Workflow", lead: "Share the note types, volume, formats and delivery process you need to support.", button: { label: "Request a Consultation", href: routes.freeAudit } },
 };

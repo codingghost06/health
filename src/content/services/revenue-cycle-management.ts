@@ -5,122 +5,55 @@ export const revenueCycleManagement: ServicePage = {
   slug: "revenue-cycle-management",
   path: "/services/revenue-cycle-management",
   name: "Revenue Cycle Management",
-  navSub: "Front-to-back RCM",
+  navSub: "Connected front-to-back workflow",
   icon: "refresh",
-  homeBlurb:
-    "End-to-end RCM strategy and operations. Reduce AR days, cut denial rates, and grow net collections by up to 34%.",
-  hubBlurb:
-    "Strategic end-to-end RCM — from patient access through zero-balance resolution. Average +34% net revenue uplift.",
-  meta: {
-    title: "Revenue Cycle Management (RCM) Services",
-    description:
-      "End-to-end RCM strategy and operations that transforms how your organization generates and collects revenue — systematically and sustainably. +34% avg. uplift.",
-  },
+  homeBlurb: "Coordinate front-, middle- and back-office billing activities through one understandable operating view.",
+  hubBlurb: "Map the revenue cycle from patient access and documentation through claim resolution and receivables follow-up.",
+  meta: { title: "Revenue Cycle Management Services", description: "HIPAA-compliant revenue cycle management support for connected patient access, coding, claims, denials, payments and AR workflows." },
   hero: {
-    breadcrumb: [
-      { label: "Home", href: routes.home },
-      { label: "Services", href: routes.services },
-    ],
-    title: ["Revenue Cycle Management", "(RCM) Services"],
-    lead: "End-to-end RCM strategy and operations that transforms how your organization generates and collects revenue — systematically and sustainably.",
-    stats: [
-      { value: "+34%", label: "Average revenue increase" },
-      { value: "52%", label: "Reduction in denials" },
-      { value: "40%", label: "Operating cost savings" },
-      { value: "18 days", label: "Average AR days" },
-    ],
+    breadcrumb: [{ label: "Home", href: routes.home }, { label: "Services", href: routes.services }],
+    title: ["Revenue Cycle Management", "With the Handoffs Made Visible"],
+    lead: "Revplus helps practices understand how registration, documentation, coding, claims, payer responses and receivables affect one another.",
   },
   blocks: [
     {
       type: "intro",
-      eyebrow: "What is RCM",
-      title: "Revenue Cycle Management is the Financial Backbone of Your Practice",
-      lead: "RCM encompasses every administrative and clinical function that contributes to the capture, management, and collection of patient service revenue — from scheduling through final payment. Health Billing optimizes all of it.",
+      eyebrow: "The Full Cycle",
+      title: "Revenue Cycle Problems Rarely Stay in One Department",
+      lead: "A denial may begin with registration, authorization, documentation or coding. A useful RCM approach follows the cause across the workflow instead of treating only the final symptom.",
       bullets: [],
-      aside: {
-        kind: "blocks",
-        items: [
-          {
-            title: "Front-End RCM",
-            body: "Scheduling optimization, pre-registration, eligibility verification, prior authorization, and financial counseling — clean data from day one.",
-          },
-          {
-            title: "Mid-Cycle RCM",
-            body: "Charge capture integrity, clinical documentation improvement, coding accuracy, CDM review, and compliance auditing.",
-          },
-          {
-            title: "Back-End RCM",
-            body: "Claims management, denial resolution, AR follow-up, patient billing, collections, and payment reconciliation.",
-          },
-        ],
-      },
+      aside: { kind: "blocks", items: [
+        { title: "Front-End", body: "Patient and insurance information, eligibility context, authorization status and financial handoffs before claim creation." },
+        { title: "Middle", body: "Documentation, charge capture, coding review and claim preparation before submission." },
+        { title: "Back-End", body: "Payer response, posting, denials, unpaid claims, receivables and account resolution." },
+      ] },
     },
     {
       type: "steps",
-      title: "Our Full-Cycle RCM Process",
+      eyebrow: "Our Revenue Cycle Approach",
+      title: "From Encounter to Payment",
+      lead: "The exact scope depends on your practice, but the working model follows a consistent sequence.",
       items: [
-        {
-          title: "Patient Scheduling & Registration",
-          body: "Demographic capture, insurance collection, authorization verification, and financial counseling before any service is rendered.",
-        },
-        {
-          title: "Eligibility & Benefits Verification",
-          body: "Real-time checks for every patient, every visit — deductibles, copays, covered services, and COB.",
-        },
-        {
-          title: "Prior Authorization Management",
-          body: "Timely auth requests, real-time status tracking, and proactive follow-up to eliminate auth-related denials.",
-        },
-        {
-          title: "Charge Capture & Clinical Documentation",
-          body: "Every billable service captured completely. Every diagnosis documented to the highest specificity for maximum legitimate reimbursement.",
-        },
-        {
-          title: "Coding, Claim Creation & Submission",
-          body: "Certified coders assign precise codes. Claims built with payer-specific formatting. Transmitted within 24 hours.",
-        },
-        {
-          title: "Payment Posting & Reconciliation",
-          body: "ERA and EOB posting within 24 hours. Underpayment identification and payer dispute resolution.",
-        },
-        {
-          title: "Denial Management & AR Follow-Up",
-          body: "Every denial investigated, appealed, resolved. Aging AR worked systematically. Nothing written off without exhausting every recovery option.",
-        },
+        { title: "Capture", body: "Gather the patient, insurance, authorization, encounter and charge information required for the agreed workflow." },
+        { title: "Review", body: "Check documentation, coding and claim details for missing or inconsistent information." },
+        { title: "Submit", body: "Transmit claims through the agreed channel and record status for follow-up." },
+        { title: "Interpret", body: "Review clearinghouse and payer responses, then route corrections, requests or denials." },
+        { title: "Reconcile", body: "Post payments and adjustments, review remaining balances and maintain an account-level next action." },
+        { title: "Report", body: "Explain patterns, unresolved dependencies and the work that needs practice input." },
       ],
     },
     {
       type: "cards",
-      title: "Why Practices Choose Us",
+      title: "Built Around Operational Clarity",
       columns: 4,
       variant: "centered",
       items: [
-        {
-          icon: "dollar",
-          title: "Increase Net Collections",
-          body: "Average 20–34% increase in net collections within the first 90 days.",
-        },
-        {
-          icon: "trending-down",
-          title: "Reduce Overhead",
-          body: "Eliminate in-house billing staff, training, software costs — saving 30–50%.",
-        },
-        {
-          icon: "timer",
-          title: "Accelerate Cash Flow",
-          body: "Reduce days in AR from 40+ to under 20. Faster payments, better cash position.",
-        },
-        {
-          icon: "bar-chart",
-          title: "Data-Driven Decisions",
-          body: "Real-time dashboards and monthly strategic reports on every metric that matters.",
-        },
+        { icon: "layers", title: "Connected View", body: "See how upstream information changes downstream claim work." },
+        { icon: "clipboard-check", title: "Defined Responsibilities", body: "Know what Revplus handles and what remains with the practice." },
+        { icon: "bell", title: "Visible Dependencies", body: "Surface missing information and decisions before they become silent delays." },
+        { icon: "bar-chart", title: "Useful Reporting", body: "Focus reviews on causes, statuses and next actions." },
       ],
     },
   ],
-  cta: {
-    title: "Is Your Revenue Cycle Leaking?",
-    lead: "Free RCM assessment: we'll map your cycle, identify the top 3 revenue gaps, and build a customized improvement roadmap — no cost.",
-    button: { label: "Get Free RCM Assessment", href: routes.freeAudit },
-  },
+  cta: { title: "See the Revenue Cycle as One Workflow", lead: "Start with a conversation about the handoffs creating the most operational friction.", button: { label: "Discuss Your Revenue Cycle", href: routes.freeAudit } },
 };

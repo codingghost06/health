@@ -5,70 +5,49 @@ export const claimsManagement: ServicePage = {
   slug: "claims-management",
   path: "/services/claims-management",
   name: "Claims Management",
-  navSub: "Clean-claim submission",
+  navSub: "Submission through resolution",
   icon: "send",
-  homeBlurb:
-    "3,000+ claim edits. Real-time tracking. Zero-lag rejection response. Every claim managed to resolution.",
-  hubBlurb:
-    "3,000+ payer-specific edits. Real-time status tracking. Same-day rejection correction. Zero claims falling through the cracks.",
-  meta: {
-    title: "Claims Management From Submission to Payment",
-    description:
-      "Real-time claim scrubbing, electronic submission, status tracking, and proactive payer follow-up — managed end-to-end so no claim falls through the cracks.",
-  },
+  homeBlurb: "Track claims through preparation, submission, rejection handling, payer response and documented resolution.",
+  hubBlurb: "Keep every in-scope claim connected to a status, owner and next action throughout its lifecycle.",
+  meta: { title: "Medical Claims Management Services", description: "Medical claims management support for preparation, submission, status tracking, rejection handling and payer follow-up." },
   hero: {
-    breadcrumb: [
-      { label: "Home", href: routes.home },
-      { label: "Services", href: routes.services },
-    ],
-    title: ["Claims Management", "From Submission to Payment"],
-    lead: "Real-time claim scrubbing, electronic submission, status tracking, and proactive payer follow-up — managed end-to-end so not a single claim falls through the cracks.",
-    stats: [
-      { value: "98.2%", label: "First-pass acceptance" },
-      { value: "24hr", label: "Submission turnaround" },
-      { value: "3,000+", label: "Automated edits" },
-      { value: "100%", label: "Claims tracked to resolution" },
-    ],
+    breadcrumb: [{ label: "Home", href: routes.home }, { label: "Services", href: routes.services }],
+    title: ["Claims Management", "From Readiness to Resolution"],
+    lead: "Revplus helps organize what should happen before a claim is sent, how payer responses are handled and which action keeps the claim moving.",
   },
   blocks: [
     {
       type: "intro",
-      eyebrow: "Claims Services",
-      title: "Every Claim Tracked. Every Payment Collected.",
-      lead: "Claims management isn't just about submitting — it's about knowing where every claim stands, at every moment, and acting immediately when something goes wrong.",
+      eyebrow: "Claim Lifecycle",
+      title: "A Claim Needs a Status—and a Next Step",
+      lead: "Submission is one milestone. Effective claims management also watches for clearinghouse responses, payer requests, denials, payments and remaining balances.",
       bullets: [
-        "Real-time eligibility verification before submission",
-        "Proprietary scrubbing with 3,000+ payer-specific edits",
-        "Electronic and paper claim generation and submission",
-        "Clearinghouse management and EDI transmission",
-        "Real-time claim status tracking by payer",
-        "Automated 277/835 processing",
-        "Rejection management and same-day resubmission",
-        "Payer portal follow-up on unpaid claims",
-        "Claim adjustment and corrected claim submission",
+        "Required claim-information review",
+        "Claim creation and submission support",
+        "Clearinghouse acceptance and rejection monitoring",
+        "Rejected-claim correction routing",
+        "Payer claim-status follow-up",
+        "Information-request and documentation coordination",
+        "Denied-claim routing into the denial workflow",
+        "Payment or remaining-balance handoff",
       ],
-      aside: {
-        kind: "blocks",
-        items: [
-          {
-            title: "Pre-Submission Scrubbing",
-            body: "3,000+ payer-specific edits catch coverage gaps, coding errors, and demographic issues before a claim ever leaves our system — protecting your first-pass rate.",
-          },
-          {
-            title: "Real-Time Status Visibility",
-            body: "Log in at any time and see the exact status of every claim — submitted, in adjudication, pending, paid, or denied — with action notes from our team.",
-          },
-          {
-            title: "Zero-Lag Rejection Response",
-            body: "Clearinghouse rejections are identified and corrected within the same business day. No claim sits rejected for more than 24 hours without action.",
-          },
-        ],
-      },
+      aside: { kind: "blocks", items: [
+        { title: "Before Submission", body: "Check that the claim contains the information required for the agreed workflow." },
+        { title: "After Submission", body: "Record acceptance, rejection and payer status so silence is not mistaken for progress." },
+        { title: "At Response", body: "Route the account to posting, correction, denial, patient or receivable follow-up." },
+      ] },
+    },
+    {
+      type: "steps",
+      title: "A Visible Claim Path",
+      items: [
+        { title: "Ready", body: "Required claim details are present or exceptions are identified." },
+        { title: "Submitted", body: "Transmission details and initial response are recorded." },
+        { title: "In Review", body: "Payer status and requested information are monitored." },
+        { title: "Action Needed", body: "The appropriate correction, denial or follow-up step is assigned." },
+        { title: "Resolved", body: "Payment, adjustment, responsibility or supported closure is documented." },
+      ],
     },
   ],
-  cta: {
-    title: "See Your Claims Managed the Right Way",
-    lead: "Free claims assessment — we'll show you what a fully managed claims pipeline looks like for your practice.",
-    button: { label: "Get Free Claims Assessment", href: routes.freeAudit },
-  },
+  cta: { title: "Make Claim Status Easier to Understand", lead: "Discuss the point where claims most often stall, reject or lose ownership.", button: { label: "Request a Consultation", href: routes.freeAudit } },
 };
