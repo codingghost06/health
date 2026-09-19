@@ -3,177 +3,120 @@ import { routes } from "@/content/site";
 
 export const home: HomeContent = {
   hero: {
-    badge: "America's #1 Medical Billing Partner",
-    title: ["Stop Losing Revenue.", "Start Getting Paid", "What You Deserve."],
-    highlight: "Paid",
-    lead: "Health Billing delivers end-to-end medical billing, RCM, credentialing, and denial management for physicians, hospitals, labs, and clinics across all 50 states — Medicare, Medicaid, and every private insurer.",
-    primary: { label: "Get a Free Revenue Audit", href: routes.freeAudit },
+    badge: "HIPAA-Compliant Revenue Cycle Support",
+    title: ["More Clarity Across", "Your Revenue Cycle."],
+    highlight: "Clarity",
+    lead:
+      "Revplus helps healthcare organizations organize medical billing, coding, claims, denials, credentialing and receivables through a clear, accountable workflow.",
+    primary: { label: "Request a Consultation", href: routes.freeAudit },
     secondary: { label: "Explore Services", href: routes.services },
     stats: [
-      { value: "98.2%", label: "First-pass claim rate" },
-      { value: "$2.4B+", label: "Revenue recovered yearly" },
-      { value: "4,800+", label: "Providers served" },
-      { value: "<24hr", label: "Claim submission SLA" },
+      { value: "HIPAA", label: "Compliant workflows" },
+      { value: "Houston", label: "Texas-based company" },
+      { value: "8", label: "Core service areas" },
+      { value: "US", label: "Primary market focus" },
     ],
   },
   payerStrip: {
-    label: "We bill:",
-    payers: [
-      "Medicare",
-      "Medicaid",
-      "Blue Cross Blue Shield",
-      "Aetna",
-      "UnitedHealthcare",
-      "Cigna",
-      "Humana",
-      "Molina",
-      "Centene",
-      "Anthem",
-      "TRICARE",
-    ],
-    more: { label: "+ 490 more", href: routes.payers },
+    label: "Common US payer environments",
+    payers: ["Medicare", "Medicaid", "Blue Cross Blue Shield", "Aetna", "UnitedHealthcare", "Cigna", "Humana"],
+    more: { label: "Payer workflow overview", href: routes.payers },
   },
   services: {
-    eyebrow: "Our Services",
-    title: ["Complete Revenue Cycle Coverage", "Under One Roof"],
-    lead: "Every service your practice needs — from charge capture to final payment — managed with precision and full transparency.",
+    eyebrow: "Revenue Cycle Services",
+    title: ["Support for the Work", "Behind Every Claim"],
+    lead:
+      "Choose focused support for one operational area or discuss a coordinated revenue-cycle workflow tailored to your practice.",
     extra: {
       icon: "receipt",
       title: "Payment Posting & Reconciliation",
-      body: "Daily ERA/EOB posting. Variance identification. Underpayment recovery. Zero revenue leakage.",
-      link: { label: "Get started", href: routes.freeAudit },
+      body: "Organized ERA and EOB posting, adjustment review and reconciliation support that helps keep account balances understandable.",
+      link: { label: "Discuss your workflow", href: routes.freeAudit },
     },
   },
   why: {
-    eyebrow: "Why Health Billing",
-    title: ["We Don't Just File Claims.", "We Fight for Every Dollar."],
-    lead: "Most billing companies submit and move on. We track, appeal, and recover — until every collectible dollar reaches your account.",
+    eyebrow: "Why Revplus",
+    title: ["A Disciplined Approach", "to Revenue Cycle Work"],
+    lead:
+      "Trust starts with knowing what is being worked, why it matters and what happens next. Our approach is designed around that visibility.",
     points: [
       {
-        title: "Specialty-Specific Billing Teams",
-        body: "Dedicated coders and billers for each specialty — cardiology, orthopedics, nephrology, behavioral health, and 35+ more.",
+        title: "Clear Ownership",
+        body: "Responsibilities, next actions and open questions are documented so work does not disappear between teams.",
       },
       {
-        title: "AI-Assisted, Human-Verified",
-        body: "Technology catches errors before submission. Certified coders verify every claim. Result: 98.2% first-pass acceptance rate.",
+        title: "Structured Follow-Up",
+        body: "Claims, denials and receivables are organized by status, priority and next action instead of being treated as a single queue.",
       },
       {
-        title: "Real-Time Dashboards & Reporting",
-        body: "You see exactly where every dollar is — always. Monthly KPI reports, payer-level breakdowns, and one dedicated account manager.",
+        title: "Practice-Aware Communication",
+        body: "Billing conversations are translated into practical decisions for clinical and administrative teams.",
       },
       {
-        title: "No Contracts. No Hidden Fees.",
-        body: "Performance-based pricing. We earn your business every month by delivering results — not by locking you in.",
+        title: "HIPAA-Compliant Workflows",
+        body: "Protected health information is handled through privacy-conscious workflows designed around HIPAA requirements.",
       },
     ],
     metrics: [
-      { label: "Clean Claim Rate", value: "98.2%", pct: 98, note: "vs. industry avg: 82%" },
-      { label: "Denial Resolution Rate", value: "93.4%", pct: 93, note: "vs. industry avg: 63%" },
-      { label: "Days in AR", value: "18 Days", pct: 47, note: "vs. industry avg: 38 days" },
-      {
-        label: "Revenue Increase After Onboarding",
-        value: "+34%",
-        pct: 85,
-        note: "Average within 90 days",
-      },
+      { label: "Claim readiness", value: "Review first", note: "Documentation, coding and claim details are checked before submission." },
+      { label: "Payer response", value: "Track next", note: "Rejections, requests and denials are routed to a defined follow-up step." },
+      { label: "Open balances", value: "Prioritize", note: "Receivables are segmented by age, payer and action required." },
+      { label: "Practice visibility", value: "Explain clearly", note: "Reporting focuses on what changed, what is pending and what needs input." },
     ],
   },
   specialties: {
-    eyebrow: "Who We Serve",
-    title: ["Billing Expertise Across", "Every Healthcare Specialty"],
-    lead: "From solo practitioners to health systems — specialty-trained teams for every service line.",
+    eyebrow: "Specialty Workflows",
+    title: ["Billing Support That Adapts", "to the Way You Deliver Care"],
+    lead:
+      "Different specialties create different documentation, coding and payer-follow-up patterns. Revplus begins by understanding those differences.",
     tiles: [
       { icon: "heart-pulse", label: "Cardiology" },
       { icon: "bone", label: "Orthopedics" },
-      { icon: "brain", label: "Neurology" },
-      { icon: "droplets", label: "Nephrology" },
-      { icon: "flask", label: "Oncology" },
       { icon: "stethoscope", label: "Primary Care" },
-      { icon: "zap", label: "Urgent Care" },
       { icon: "smile", label: "Behavioral Health" },
       { icon: "radio", label: "Radiology" },
       { icon: "microscope", label: "Pathology & Labs" },
-      { icon: "wind", label: "Pulmonology" },
       { icon: "activity", label: "Gastroenterology" },
-      { icon: "eye", label: "Ophthalmology" },
-      { icon: "flower", label: "OB/GYN" },
       { icon: "baby", label: "Pediatrics" },
-      { icon: "hospital", label: "Hospital Medicine" },
-      { icon: "ambulance", label: "Emergency Medicine" },
+      { icon: "flower", label: "OB/GYN" },
       { icon: "moon", label: "Anesthesiology" },
-      { icon: "pill", label: "Pain Management" },
+      { icon: "zap", label: "Urgent Care" },
+      { icon: "hospital", label: "Hospital Medicine" },
     ],
-    moreTile: { label: "+ More", sub: "40+ Specialties" },
-    more: { label: "View All Specialties", href: routes.specialties },
+    moreTile: { label: "More", sub: "Discuss your specialty" },
+    more: { label: "Explore Specialty Workflows", href: routes.specialties },
   },
   process: {
-    eyebrow: "Our Process",
-    title: "Up and Running in 5 Business Days",
-    lead: "Fast onboarding. Zero disruption. Immediate performance improvements from day one.",
+    eyebrow: "How We Work",
+    title: "A Practical Path From Discovery to Delivery",
+    lead:
+      "Every engagement starts with your current workflow. Scope, access, responsibilities and reporting are agreed before operational work begins.",
     steps: [
-      {
-        title: "Free Revenue Audit",
-        body: "We assess your current billing performance, identify leakage, and benchmark KPIs against specialty norms.",
-      },
-      {
-        title: "Onboarding & Integration",
-        body: "Seamless EHR integration in 5 business days. Zero disruption to your existing workflow.",
-      },
-      {
-        title: "Billing & Collections",
-        body: "Claims submitted within 24 hours. Real-time tracking. Active follow-up on every open balance.",
-      },
-      {
-        title: "Optimize & Report",
-        body: "Monthly KPI reviews, denial trend analysis, and continuous improvement recommendations.",
-      },
+      { title: "Understand", body: "We discuss your practice structure, payer mix, systems, pain points and current team responsibilities." },
+      { title: "Map", body: "We document the handoffs, data access, priorities and service boundaries needed for a controlled transition." },
+      { title: "Operate", body: "Agreed billing activities move through defined review, submission, follow-up and escalation steps." },
+      { title: "Communicate", body: "Regular reporting keeps open issues, dependencies and next actions visible to the right people." },
     ],
   },
-  testimonials: {
-    eyebrow: "Client Results",
-    title: "4,800+ Providers Trust Health Billing",
+  principles: {
+    eyebrow: "What Partnership Looks Like",
+    title: "Useful Habits, Not Unverified Promises",
+    lead:
+      "Revplus earns confidence through a transparent process and responsible communication—not inflated numbers or invented success stories.",
     items: [
-      {
-        quote:
-          "Switching to Health Billing was the best operational decision we made. Collections jumped 42% in the first quarter, and AR days dropped from 52 to 19. Responsive, knowledgeable, and genuinely invested in our success.",
-        name: "Dr. Michael Reynolds, MD",
-        role: "Cardiologist — Atlanta, Georgia",
-      },
-      {
-        quote:
-          "Their denial management alone recovered over $380,000 in revenue we had already written off. We tried three billing companies before Health Billing. None came close. The ROI is extraordinary.",
-        name: "Lisa Tran, Practice Administrator",
-        role: "Orthopedic Group — Dallas, Texas",
-      },
-      {
-        quote:
-          "Their credentialing team got us enrolled with 14 payers in under 6 weeks. That's unheard of. Revenue has more than doubled since partnering with Health Billing — I wish we'd switched sooner.",
-        name: "Dr. Amara Osei, DO",
-        role: "Family Medicine — Chicago, Illinois",
-      },
-      {
-        quote:
-          "We run a 9-provider behavioral health practice and our prior biller couldn't keep up with payer rules. Health Billing's coders know psych CPT inside-out — clean-claim rate went from 71% to 98% and our reimbursements per session climbed 19%.",
-        name: "Dr. Priya Raman, PsyD",
-        role: "Behavioral Health Group — Seattle, Washington",
-      },
-      {
-        quote:
-          "As a 3-location urgent care, our AR was a nightmare — over $620K aged past 90 days. Their AR recovery team worked every single claim. We collected $478K in four months on balances we'd basically given up on.",
-        name: "Marcus Whitfield, CFO",
-        role: "Urgent Care Network — Phoenix, Arizona",
-      },
-      {
-        quote:
-          "Solo nephrology practice here — I needed a billing partner who actually understood dialysis MCP billing and CKD coding. Health Billing nailed it from day one. Monthly reports are clear, my dedicated account manager picks up the phone, and revenue is up 31%.",
-        name: "Dr. Elena Vasquez, MD",
-        role: "Nephrology — Miami, Florida",
-      },
+      { icon: "message", title: "Direct Communication", body: "Questions, blockers and requested decisions are surfaced early and explained in plain language." },
+      { icon: "search", title: "Detail-Oriented Review", body: "Claim and account details are checked in context before a next action is selected." },
+      { icon: "clipboard-check", title: "Documented Work", body: "Statuses and actions are recorded so your team can understand how an item moved forward." },
+      { icon: "refresh", title: "Consistent Follow-Up", body: "Open work is revisited using defined queues and escalation paths instead of informal reminders." },
+      { icon: "hand-heart", title: "Practice-Focused Support", body: "Recommendations consider the people, systems and constraints already present in your practice." },
+      { icon: "lock", title: "Privacy-Conscious Operations", body: "HIPAA-compliant handling of protected health information is built into the operating approach." },
     ],
   },
   cta: {
-    title: "Ready to Recover Revenue You're Currently Losing?",
-    lead: "Schedule a free, no-obligation revenue audit. We'll identify exactly where your billing is falling short — and show you the number.",
-    button: { label: "Book Your Free Revenue Audit", href: routes.freeAudit },
+    title: "Let’s Talk About Your Billing Workflow",
+    lead:
+      "Share where the process feels unclear or difficult. Revplus will help you identify the most useful place to begin—without promising an outcome before reviewing the facts.",
+    button: { label: "Request a Consultation", href: routes.freeAudit },
+    secondary: { label: "Call +1 (832) 942-9040", href: "tel:+18329429040" },
   },
 };

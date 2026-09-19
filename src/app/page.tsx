@@ -7,7 +7,7 @@ import { PayerStrip } from "@/components/sections/payer-strip";
 import { Process } from "@/components/sections/process";
 import { ServicesGrid } from "@/components/sections/services-grid";
 import { SpecialtiesGrid } from "@/components/sections/specialties-grid";
-import { Testimonials } from "@/components/sections/testimonials";
+import { PartnershipPrinciples } from "@/components/sections/partnership-principles";
 import { WhyUs } from "@/components/sections/why-us";
 import { JsonLd } from "@/components/seo/json-ld";
 import { pageMetadata, serviceJsonLd } from "@/lib/seo";
@@ -28,7 +28,7 @@ export default function HomePage() {
       <WhyUs content={home.why} />
       <SpecialtiesGrid content={home.specialties} />
       <Process content={home.process} />
-      <Testimonials content={home.testimonials} />
+      <PartnershipPrinciples content={home.principles} />
       <CtaBand {...home.cta} />
       <JsonLd
         data={serviceJsonLd(

@@ -131,8 +131,8 @@ export function LeadForm() {
         </span>
         <h3 className="mt-5 font-display text-[1.75rem] text-navy-900">Preview build — nothing was sent</h3>
         <p className="mx-auto mt-2 max-w-md text-[15px] leading-relaxed text-slate-600">
-          Your details validated correctly. On the live site this request is emailed to{" "}
-          <strong className="text-navy-900">{site.leadInbox}</strong> and a specialist follows up within 4 business hours.
+          Your details validated correctly, but GitHub Pages cannot send this form because it has no server endpoint.
+          Please call <a href={site.phone.href} className="font-semibold text-navy-900 underline">{site.phone.display}</a> to contact Revplus.
         </p>
         <div className="mt-6">
           <Button variant="link" onClick={() => setStatus("idle")}>
@@ -241,14 +241,22 @@ export function LeadForm() {
         <p role="alert" className="flex items-start gap-2 rounded-md border border-danger-600/30 bg-danger-50 px-4 py-3 text-[14px] text-danger-600">
           <Icon name="alert" className="mt-0.5 size-4 shrink-0" strokeWidth={2.2} />
           <span>
-            {serverMessage}{" "}
+            {serverMessage} Call{" "}
             <a href={site.phone.href} className="font-semibold underline">
               {site.phone.display}
             </a>{" "}
-            ·{" "}
-            <a href={site.email.href} className="font-semibold underline">
-              {site.email.display}
-            </a>
+            for assistance.
+          </span>
+        </p>
+      ) : null}
+
+      {IS_PREVIEW ? (
+        <p className="flex items-start gap-2 rounded-md border border-brand-200 bg-brand-50 px-4 py-3 text-[13.5px] leading-relaxed text-slate-700">
+          <Icon name="alert" className="mt-0.5 size-4 shrink-0 text-brand-700" strokeWidth={2.2} />
+          <span>
+            This GitHub Pages preview can validate the fields but cannot transmit them. Call{" "}
+            <a href={site.phone.href} className="font-semibold text-brand-700 underline">{site.phone.display}</a>{" "}
+            to contact Revplus.
           </span>
         </p>
       ) : null}
@@ -260,7 +268,7 @@ export function LeadForm() {
             Sending…
           </span>
         ) : (
-          f.submit
+          IS_PREVIEW ? "Validate Request Details" : f.submit
         )}
       </Button>
       <p className="text-center text-[13px] text-slate-500">{f.footnote}</p>

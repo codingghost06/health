@@ -42,7 +42,6 @@ export function RevenueCalculator() {
   const c = calculatorPage;
   const baseId = useId();
   const [raw, setRaw] = useState<Raw>(() => toRaw(defaults));
-  const [specialty, setSpecialty] = useState<number>(defaults.specialty);
   const [touched, setTouched] = useState<Partial<Record<NumericField, boolean>>>({});
 
   /** Parsed + clamped numbers used for the live calculation. */
@@ -55,9 +54,8 @@ export function RevenueCalculator() {
       improvedNcr: n("improvedNcr"),
       ar: n("ar"),
       arRecovery: n("arRecovery"),
-      specialty,
     };
-  }, [raw, specialty]);
+  }, [raw]);
 
   const results = useMemo(() => calculate(inputs), [inputs]);
   const errors = useMemo(() => {
@@ -70,7 +68,7 @@ export function RevenueCalculator() {
   }, [raw]);
 
   const noImprovement = inputs.improvedNcr <= inputs.currentNcr;
-  const isDefault = specialty === defaults.specialty && numericFields.concat("visits").every((f) => raw[f] === String(defaults[f]));
+  const isDefault = numericFields.concat("visits").every((f) => raw[f] === String(defaults[f]));
 
   const set = (f: NumericField, v: string) => setRaw((r) => ({ ...r, [f]: v }));
   const blur = (f: NumericField) => {
@@ -81,7 +79,6 @@ export function RevenueCalculator() {
   };
   const reset = () => {
     setRaw(toRaw(defaults));
-    setSpecialty(defaults.specialty);
     setTouched({});
   };
 
@@ -196,30 +193,6 @@ export function RevenueCalculator() {
             );
           })}
 
-          <div className="sm:col-span-2">
-            <label htmlFor={`${baseId}-specialty`} className="text-[14px] font-semibold text-navy-900">
-              {c.fields.specialty.label}
-            </label>
-            <div className="relative mt-2">
-              <select
-                id={`${baseId}-specialty`}
-                value={specialty}
-                onChange={(e) => setSpecialty(Number(e.target.value))}
-                aria-describedby={`${baseId}-specialty-help`}
-                className="h-12 w-full appearance-none rounded-md border border-line-strong bg-white pl-4 pr-10 text-[15px] text-ink outline-none transition focus:border-brand-500 focus:ring-4 focus:ring-brand-100"
-              >
-                {c.specialties.map((s) => (
-                  <option key={s.label} value={s.value}>
-                    {s.label}
-                  </option>
-                ))}
-              </select>
-              <Icon name="chevron-down" className="pointer-events-none absolute right-3.5 top-1/2 size-4 -translate-y-1/2 text-slate-500" />
-            </div>
-            <p id={`${baseId}-specialty-help`} className="mt-1.5 text-[13px] text-slate-500">
-              {c.fields.specialty.help}
-            </p>
-          </div>
         </div>
       </form>
 

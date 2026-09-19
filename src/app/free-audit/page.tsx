@@ -17,7 +17,7 @@ export default function FreeAuditPage() {
   return (
     <>
       <PageHero {...p.hero} />
-      <Section tone="surface" aria-label="Free revenue audit request">
+      <Section tone="surface" aria-label="Consultation request">
         <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
           <div className="rounded-2xl border border-line bg-white p-6 shadow-card sm:p-8 lg:p-10">
             <h2 className="font-display text-[1.75rem] text-navy-900 sm:text-[2rem]">{p.form.title}</h2>
@@ -64,10 +64,10 @@ export default function FreeAuditPage() {
         </div>
         <p className="mt-8 flex items-center justify-center gap-2 text-[13px] text-slate-500">
           <Icon name="lock" className="size-3.5" />
-          Your information is never shared. Submitting this form does not require any protected health information.
+          Use business contact information only. No protected health information is needed for this request.
         </p>
       </Section>
-      <JsonLd data={breadcrumbJsonLd([...p.hero.breadcrumb, { label: "Free Revenue Audit", href: routes.freeAudit }])} />
+      <JsonLd data={breadcrumbJsonLd([...p.hero.breadcrumb, { label: "Request a Consultation", href: routes.freeAudit }])} />
     </>
   );
 }

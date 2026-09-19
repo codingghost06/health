@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { footerColumns } from "@/content/nav";
-import { site } from "@/content/site";
+import { routes, site } from "@/content/site";
 import { Container } from "@/components/ui/container";
 import { Icon } from "@/components/ui/icon";
 import { Logo } from "@/components/ui/logo";
@@ -13,8 +13,8 @@ export function Footer() {
           <div>
             <Logo inverted />
             <p className="mt-5 max-w-xs text-[14.5px] leading-relaxed text-white/60">
-              America&apos;s most trusted medical billing and revenue cycle management company. Serving 4,800+ physicians,
-              hospitals, labs, and clinics in all 50 states.
+              Medical billing and revenue cycle support built around clear communication,
+              disciplined follow-up and HIPAA-compliant workflows.
             </p>
             <ul className="mt-6 grid gap-3 text-[14.5px]">
               <li>
@@ -23,15 +23,13 @@ export function Footer() {
                   {site.phone.display}
                 </a>
               </li>
-              <li>
-                <a href={site.email.href} className="inline-flex items-center gap-2.5 text-white/80 transition hover:text-white">
-                  <Icon name="mail" className="size-4 text-teal-500" />
-                  {site.email.display}
-                </a>
-              </li>
               <li className="inline-flex items-start gap-2.5 text-white/80">
                 <Icon name="map-pin" className="mt-1 size-4 shrink-0 text-teal-500" />
                 <span>{site.address.display}</span>
+              </li>
+              <li className="inline-flex items-center gap-2.5 text-white/80">
+                <Icon name="globe" className="size-4 shrink-0 text-teal-500" />
+                <span>{site.displayDomain}</span>
               </li>
             </ul>
           </div>
@@ -53,14 +51,22 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-5 border-t border-white/10 pt-7 text-[13px] text-white/50 md:flex-row md:items-center md:justify-between">
-          <p>
-            © {site.copyrightYear} {site.legalName}. All rights reserved. · {site.address.display} ·{" "}
-            <a href={site.phone.href} className="hover:text-white">
-              {site.phone.display}
-            </a>
-          </p>
-          <ul className="flex flex-wrap gap-2" aria-label="Compliance and memberships">
-            {site.badges.map((b) => (
+          <div className="grid gap-2">
+            <p>
+              © {site.copyrightYear} {site.legalName}. All rights reserved. · {site.address.display} ·{" "}
+              <a href={site.phone.href} className="hover:text-white">
+                {site.phone.display}
+              </a>
+            </p>
+            <nav aria-label="Legal">
+              <ul className="flex flex-wrap gap-x-4 gap-y-1">
+                <li><Link href={routes.privacy} className="hover:text-white">Privacy</Link></li>
+                <li><Link href={routes.terms} className="hover:text-white">Website Terms</Link></li>
+              </ul>
+            </nav>
+          </div>
+          <ul className="flex flex-wrap gap-2" aria-label="Trust indicators">
+            {site.trustIndicators.map((b) => (
               <li key={b} className="rounded-md border border-white/15 px-2.5 py-1 text-[11px] font-semibold tracking-wider text-white/70">
                 {b}
               </li>

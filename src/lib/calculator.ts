@@ -2,10 +2,10 @@
  * Revenue calculator domain logic. Pure functions, no React, so the formula
  * can be unit-tested and reused (e.g. in an email summary later).
  *
- * The formula is intentionally identical to the reference site:
+ * Transparent scenario formula:
  *   gross     = visits × allowed
  *   current   = gross × currentNcr
- *   projected = gross × improvedNcr × specialty
+ *   projected = gross × improvedNcr
  *   arGain    = ar × arRecovery
  *   monthly   = max(0, (projected − current) + arGain)
  *   yearly    = monthly × 12
@@ -25,8 +25,6 @@ export interface CalculatorInputs {
   ar: number;
   /** Estimated AR recovery, percent (0–100). */
   arRecovery: number;
-  /** Specialty multiplier, e.g. 1.12. */
-  specialty: number;
 }
 
 export interface CalculatorResults {
@@ -53,7 +51,7 @@ export const limits = {
   improvedNcr: { min: 50, max: 99, step: 1 },
   ar: { min: 0, max: 10_000_000, step: 1000 },
   arRecovery: { min: 0, max: 80, step: 1 },
-} as const satisfies Record<Exclude<keyof CalculatorInputs, "specialty">, FieldLimits>;
+} as const satisfies Record<keyof CalculatorInputs, FieldLimits>;
 
 export type NumericField = keyof typeof limits;
 
@@ -64,13 +62,12 @@ export const defaults: CalculatorInputs = {
   improvedNcr: 92,
   ar: 45000,
   arRecovery: 22,
-  specialty: 1,
 };
 
 export function calculate(i: CalculatorInputs): CalculatorResults {
   const gross = i.visits * i.allowed;
   const current = gross * (i.currentNcr / 100);
-  const projected = gross * (i.improvedNcr / 100) * i.specialty;
+  const projected = gross * (i.improvedNcr / 100);
   const arGain = i.ar * (i.arRecovery / 100);
   const monthly = Math.max(0, projected - current + arGain);
   return {

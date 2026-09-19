@@ -1,26 +1,27 @@
 export const site = {
-  name: "Health Billing",
-  legalName: "Health Billing LLC",
-  tagline: "America's Revenue Experts",
+  name: "Revplus Multisolutions",
+  medicalName: "Revplus Medical Solutions",
+  legalName: "Revplus Multisolutions",
+  tagline: "Medical Revenue Cycle Support",
+  // Keep the currently active GitHub Pages custom domain canonical until the
+  // new domain is connected and verified. See README.md for the cutover steps.
   url: "https://healthbilling.us",
-  title: "Health Billing | America's Premier Medical Billing & Revenue Cycle Management",
+  displayDomain: "Revplusmedsolutions.com",
+  futureUrl: "https://revplusmedsolutions.com",
+  title: "Revplus Medical Solutions | Medical Billing & Revenue Cycle Support",
   description:
-    "Health Billing — expert medical billing, RCM, coding, credentialing, denial management & AR recovery for physicians, hospitals, labs and clinics across the USA. Medicare, Medicaid & all private insurers.",
-  phone: { display: "+1 (415) 939-6721", href: "tel:+14159396721", e164: "+1-415-939-6721" },
-  email: { display: "hello@healthbilling.us", href: "mailto:hello@healthbilling.us" },
+    "Houston-based medical billing and revenue cycle support for healthcare organizations, including coding, claims, denials, credentialing and accounts receivable follow-up.",
+  phone: { display: "+1 (832) 942-9040", href: "tel:+18329429040", e164: "+1-832-942-9040" },
   address: {
-    street: "97 Newkirk Street",
-    city: "Jersey City",
-    region: "NJ",
-    postalCode: "07306",
+    street: "4065 S Braeswood Blvd",
+    city: "Houston",
+    region: "TX",
+    postalCode: "77025",
     country: "US",
-    display: "97 Newkirk Street, Jersey City, NJ 07306",
+    display: "4065 S Braeswood Blvd, Houston, TX 77025, United States",
   },
-  hours: ["Mon–Fri: 8:00 AM – 8:00 PM ET", "Saturday: 9:00 AM – 2:00 PM ET"],
-  badges: ["HIPAA", "SOC 2", "HFMA", "AAPC"],
-  copyrightYear: 2025,
-  /** Lead inbox for the free-audit form. */
-  leadInbox: "hello@healthbilling.us",
+  trustIndicators: ["HIPAA-Compliant Workflows", "Houston, Texas"],
+  copyrightYear: 2026,
 } as const;
 
 export const routes = {
@@ -33,4 +34,6 @@ export const routes = {
   calculator: "/calculator",
   resources: "/resources",
   freeAudit: "/free-audit",
+  privacy: "/privacy",
+  terms: "/terms",
 } as const;

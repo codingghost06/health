@@ -4,103 +4,44 @@ import { routes } from "@/content/site";
 export const payerCollectionsPage: InnerPage = {
   slug: "payer-collections",
   path: routes.payerCollections,
-  meta: {
-    title: "Collections from Private Insurance, Medicare, and Medicaid",
-    description:
-      "We help practices collect from Cigna, Aetna, UnitedHealthcare, BCBS, Humana, Medicare, Medicaid, managed care, secondary payers, workers' comp, and patient balances.",
-  },
+  meta: { title: "Medical Payer Follow-Up Services", description: "Structured payer follow-up for commercial insurance, Medicare, Medicaid and secondary claim workflows." },
   hero: {
     breadcrumb: [{ label: "Home", href: routes.home }],
-    title: ["Collections from Private Insurance,", "Medicare, and Medicaid"],
-    lead: "We help practices collect from Cigna, Aetna, UnitedHealthcare, Blue Cross Blue Shield, Humana, Medicare, Medicaid, managed care plans, secondary payers, workers' comp, and patient responsibility balances. Our team does not stop at claim submission. We pursue payment until the claim is paid, appealed, adjusted, or escalated.",
-    stats: [
-      { value: "Cigna", label: "Commercial claims" },
-      { value: "Medicare", label: "CMS compliant billing" },
-      { value: "Medicaid", label: "State MCO follow-up" },
-      { value: "AR", label: "Aging bucket recovery" },
-    ],
+    title: ["Payer Follow-Up With", "a Documented Next Step"],
+    lead: "Submitting a claim does not finish the work. Revplus helps interpret responses, organize follow-up and keep unresolved accounts tied to a clear action.",
   },
   blocks: [
     {
       type: "cards",
-      id: "payer-engine",
-      eyebrow: "Payer Collection Engine",
-      title: "We Work the Claim Until Money Hits the Account",
-      lead: "Many billing teams submit claims and wait. Health Billing uses payer-specific follow-up, denial appeals, underpayment review, secondary billing, and patient balance workflows to improve net collections across commercial, Medicare, and Medicaid payers.",
+      eyebrow: "Follow-Up Contexts",
+      title: "Work From the Actual Payer Response",
       columns: 3,
-      variant: "default",
       items: [
-        {
-          icon: "building",
-          title: "Private Insurance",
-          sub: "Cigna, Aetna, UHC, BCBS, Humana and more",
-          bullets: [
-            "Eligibility and benefit verification",
-            "Prior authorization tracking",
-            "Claim status checks through portals and clearinghouses",
-            "Denial appeal packets with documentation",
-            "Underpayment and fee schedule review",
-            "Secondary and tertiary claim follow-up",
-          ],
-        },
-        {
-          icon: "landmark",
-          title: "Medicare",
-          sub: "Traditional Medicare and Medicare Advantage",
-          bullets: [
-            "LCD and NCD policy checks",
-            "Modifier and medical necessity review",
-            "MSP and coordination of benefits handling",
-            "Medicare Advantage plan follow-up",
-            "RAC, MAC, and audit response support",
-            "Appeals and redetermination support",
-          ],
-        },
-        {
-          icon: "hospital",
-          title: "Medicaid",
-          sub: "State Medicaid and Medicaid MCOs",
-          bullets: [
-            "State-specific Medicaid rules",
-            "Managed care plan billing workflows",
-            "Eligibility, spend-down, and dual eligibility handling",
-            "CHIP, EPSDT, and waiver billing support",
-            "Timely filing and resubmission tracking",
-            "Denied claim correction and appeals",
-          ],
-        },
+        { icon: "building", title: "Commercial Plans", body: "Track acknowledgements, claim status, information requests, denials and remaining balances using plan-specific channels." },
+        { icon: "landmark", title: "Medicare", body: "Route status, policy, coordination-of-benefits and appeal work through the appropriate Medicare context." },
+        { icon: "hospital", title: "Medicaid", body: "Account for state-program and managed-care differences rather than treating Medicaid as one national workflow." },
+        { icon: "layers", title: "Secondary Claims", body: "Confirm primary adjudication information and route the remaining balance through the supported secondary process." },
+        { icon: "shield-check", title: "Denied Claims", body: "Move denial work into classification, research, correction or appeal based on the supported facts." },
+        { icon: "wallet", title: "Open Receivables", body: "Segment balances by payer, age, history and next action for an organized follow-up queue." },
       ],
     },
     {
       type: "steps",
-      title: "How We Increase Collections",
+      title: "The Follow-Up Loop",
       items: [
-        {
-          title: "Verify Before the Visit",
-          body: "We confirm active coverage, copay, deductible, authorization requirements, referral rules, and coordination of benefits before claims are created.",
-        },
-        {
-          title: "Submit Clean Claims",
-          body: "Claims are checked for coding, modifiers, medical necessity, provider enrollment, place of service, payer edits, and documentation gaps.",
-        },
-        {
-          title: "Follow Up by Payer and Aging Bucket",
-          body: "Open AR is worked by payer, dollar value, denial reason, timely filing risk, and 0 to 30, 31 to 60, 61 to 90, 90 plus day buckets.",
-        },
-        {
-          title: "Appeal Denials and Underpayments",
-          body: "We prepare appeal packets, attach clinical documentation, cite payer policy, correct coding issues, and pursue payer reconsideration.",
-        },
-        {
-          title: "Post, Reconcile, and Report",
-          body: "ERA and EOB payments are posted daily, underpayments are flagged, patient responsibility is moved correctly, and monthly payer performance is reported.",
-        },
+        { title: "Check", body: "Confirm submission history and the most recent payer or clearinghouse status." },
+        { title: "Understand", body: "Identify the cause, missing dependency and available response path." },
+        { title: "Act", body: "Submit the supported correction, information, appeal or inquiry." },
+        { title: "Record", body: "Document the action, reference details and next-contact date." },
+        { title: "Escalate or Resolve", body: "Move the account forward based on the payer response and practice policy." },
       ],
     },
+    {
+      type: "band",
+      title: "No Insurer Affiliation Is Implied",
+      lead: "Payer names on this site are informational examples of US billing environments. They are not partner logos or endorsements.",
+      buttons: [{ label: "View Payer Contexts", href: routes.payers, variant: "ghost" }],
+    },
   ],
-  cta: {
-    title: "Private Insurance, Medicare, Medicaid, We Collect Across All of Them.",
-    lead: "Let us review your payer mix and AR aging to show which insurance companies are holding your money.",
-    button: { label: "Get a Free Payer Collections Review", href: routes.freeAudit },
-  },
+  cta: { title: "Make Payer Follow-Up Easier to See", lead: "Discuss the queues, plans and unresolved responses that need clearer ownership.", button: { label: "Talk to Revplus", href: routes.freeAudit } },
 };

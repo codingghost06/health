@@ -1,25 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Outfit } from "next/font/google";
 import "./globals.css";
 import { site } from "@/content/site";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { JsonLd } from "@/components/seo/json-ld";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-outfit",
-  display: "swap",
-});
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-  variable: "--font-cormorant",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -30,6 +15,9 @@ export const metadata: Metadata = {
   description: site.description,
   applicationName: site.name,
   authors: [{ name: site.name }],
+  icons: {
+    apple: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/brand/revplus-mark.png`,
+  },
   // Static preview builds (GitHub Pages) must not be indexed; the real domain is canonical.
   robots:
     process.env.NEXT_PUBLIC_DEPLOY_TARGET === "github-pages"
@@ -51,14 +39,14 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0b1f3a",
+  themeColor: "#0b2648",
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${outfit.variable} ${cormorant.variable} h-full`}>
+    <html lang="en" className="h-full">
       <body className="flex min-h-full flex-col">
         <a
           href="#main"

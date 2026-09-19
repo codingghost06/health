@@ -5,7 +5,7 @@ interface PageMeta {
   title: string;
   description: string;
   path: string;
-  /** Skip the "| Health Billing" suffix (home page). */
+  /** Skip the brand suffix (home page). */
   absoluteTitle?: boolean;
 }
 
@@ -43,8 +43,7 @@ export const organizationJsonLd = {
   name: site.name,
   legalName: site.legalName,
   url: site.url,
-  logo: `${site.url}/icon.svg`,
-  email: site.email.display,
+  logo: `${site.url}/brand/revplus-mark.png`,
   telephone: site.phone.e164,
   address: {
     "@type": "PostalAddress",
@@ -56,12 +55,11 @@ export const organizationJsonLd = {
   },
   areaServed: "US",
   description:
-    "Medical billing, revenue cycle management, coding, credentialing, denial management and AR recovery for physicians, hospitals, labs and clinics across the United States.",
+    "Houston-based medical billing, revenue cycle management, coding, credentialing, denial management and accounts receivable support.",
   contactPoint: {
     "@type": "ContactPoint",
     telephone: site.phone.e164,
     contactType: "sales",
-    email: site.email.display,
     areaServed: "US",
     availableLanguage: "English",
   },
@@ -72,7 +70,7 @@ export const websiteJsonLd = {
   "@type": "WebSite",
   name: site.name,
   url: site.url,
-  description: "America's premier medical billing and revenue cycle management partner for healthcare practices.",
+  description: "Medical billing and revenue cycle support for healthcare organizations in the United States.",
 };
 
 export function serviceJsonLd(name: string, description: string, path: string) {

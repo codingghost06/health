@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 import { calculate, clamp, defaults, formatCurrency, limits, validateField } from "./calculator.ts";
 
 describe("calculate()", () => {
-  it("reproduces the reference site's default output", () => {
+  it("calculates the documented default scenario", () => {
     const r = calculate(defaults);
     assert.equal(Math.round(r.current), 86_580);
     assert.equal(Math.round(r.projected), 102_120);
@@ -13,18 +13,12 @@ describe("calculate()", () => {
     assert.equal(r.gap, 14);
   });
 
-  it("matches the reference for 1,000 visits", () => {
+  it("scales the scenario for 1,000 visits", () => {
     const r = calculate({ ...defaults, visits: 1000 });
     assert.equal(Math.round(r.current), 144_300);
     assert.equal(Math.round(r.projected), 170_200);
     assert.equal(Math.round(r.monthly), 35_800);
     assert.equal(Math.round(r.yearly), 429_600);
-  });
-
-  it("applies the specialty multiplier to projected collections only", () => {
-    const r = calculate({ ...defaults, specialty: 1.12 });
-    assert.equal(Math.round(r.current), 86_580);
-    assert.equal(Math.round(r.projected), Math.round(600 * 185 * 0.92 * 1.12));
   });
 
   it("never reports a negative opportunity or gap", () => {

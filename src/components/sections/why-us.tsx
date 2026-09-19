@@ -24,24 +24,15 @@ export function WhyUs({ content }: { content: HomeContent["why"] }) {
           </ul>
         </div>
 
-        <ul className="grid content-center gap-4" aria-label="Performance benchmarks">
+        <ul className="grid content-center gap-4" aria-label="Revenue cycle operating approach">
           {content.metrics.map((m) => (
-            <li key={m.label} className="rounded-xl border border-line bg-white p-5 shadow-card sm:p-6">
-              <div className="flex items-baseline justify-between gap-4">
-                <span className="text-[14px] font-semibold text-slate-700">{m.label}</span>
-                <span className="font-display text-[1.75rem] leading-none tabular-nums text-navy-900">{m.value}</span>
+            <li key={m.label} className="group rounded-xl border border-line bg-white p-5 shadow-card transition hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-card-hover sm:p-6">
+              <div className="flex items-center justify-between gap-4">
+                <span className="text-[13px] font-semibold uppercase tracking-[0.12em] text-slate-500">{m.label}</span>
+                <Icon name="arrow-right" className="size-4 text-teal-600 transition-transform group-hover:translate-x-0.5" />
               </div>
-              <div
-                className="mt-3 h-2 overflow-hidden rounded-full bg-surface-2"
-                role="meter"
-                aria-valuemin={0}
-                aria-valuemax={100}
-                aria-valuenow={m.pct}
-                aria-label={`${m.label}: ${m.value}`}
-              >
-                <div className="metric-fill h-full origin-left rounded-full bg-gradient-to-r from-brand-600 to-teal-500" style={{ width: `${m.pct}%` }} />
-              </div>
-              <p className="mt-2 text-[12.5px] text-slate-500">{m.note}</p>
+              <p className="mt-3 text-[1.2rem] font-semibold text-navy-900">{m.value}</p>
+              <p className="mt-1 text-[13.5px] leading-relaxed text-slate-500">{m.note}</p>
             </li>
           ))}
         </ul>

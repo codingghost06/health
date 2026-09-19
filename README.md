@@ -1,95 +1,71 @@
-# Health Billing — website
+# Revplus Medical Solutions website
 
-Production rebuild of [healthbilling.us](https://healthbilling.us) in **Next.js 16 (App Router) · TypeScript · Tailwind CSS v4**.
+Public website for **Revplus Multisolutions**, with medical-service messaging under **Revplus Medical Solutions**. Built with Next.js 16 App Router, TypeScript and Tailwind CSS v4.
 
-- 17 real, statically generated routes (the original was a single URL with JS-toggled sections)
-- Fully working revenue calculator (same formula as the original, with validation, reset and a mobile summary bar)
-- Free-audit lead form → email via **Resend** through a Next.js Route Handler (no separate backend, no secrets in the browser)
-- SEO built in: per-page metadata, canonical URLs, Open Graph image, sitemap, robots, JSON-LD (Organization, WebSite, Service, BreadcrumbList, FAQPage)
-- Zero images to optimise: the logo and every icon are inline SVG (Lucide); fonts are self-hosted through `next/font`
+The site includes a redesigned homepage, eight service pages, specialty and payer education, a transparent scenario calculator, resources, a consultation form, responsive navigation, SEO metadata and JSON-LD.
 
 ## Quick start
 
 ```bash
-npm install
-cp .env.example .env.local   # then fill in RESEND_API_KEY etc.
-npm run dev                  # http://localhost:3000
+npm ci
+npm run dev
 ```
 
-| Script              | What it does                                              |
-| ------------------- | --------------------------------------------------------- |
-| `npm run dev`       | Development server                                        |
-| `npm run build`     | Production build (also type-checks)                       |
-| `npm start`         | Serve the production build                                |
-| `npm run lint`      | ESLint (Next core-web-vitals + TypeScript rules)          |
-| `npm run typecheck` | `tsc --noEmit`                                            |
-| `npm test`          | Unit tests (calculator formula, lead validation, nav sync) — Node's built-in runner, no extra deps |
+Open `http://localhost:3000`.
 
-## Environment variables
+| Script | Purpose |
+| --- | --- |
+| `npm run dev` | Start local development |
+| `npm test` | Run calculator, lead-validation and service-summary tests |
+| `npm run lint` | Run ESLint |
+| `npm run typecheck` | Run TypeScript without emitting files |
+| `npm run build` | Build the Node-hosted application |
+| `npm run build:pages` | Build the static GitHub Pages version into `out/` |
 
-Copy `.env.example` to `.env.local`. All variables are **server-side only** (never prefixed with `NEXT_PUBLIC_`).
+## Content and architecture
 
-| Variable          | Required in prod | Purpose                                                                 |
-| ----------------- | ---------------- | ----------------------------------------------------------------------- |
-| `RESEND_API_KEY`  | yes              | Resend API key used by `POST /api/lead`                                 |
-| `LEAD_TO_EMAIL`   | no               | Inbox that receives leads (default `hello@healthbilling.us`)            |
-| `LEAD_FROM_EMAIL` | yes              | Verified sender, e.g. `Health Billing <leads@healthbilling.us>`. The domain must be verified in Resend. |
+Public copy is centralized under `src/content`. Shared company information is in `src/content/site.ts`, service pages are under `src/content/services`, and typed block renderers are under `src/components/blocks`.
 
-Behaviour without a key: in development the lead is logged to the server console and the form shows success; in production the API returns 503 and the form shows an error with phone/email fallbacks.
+The official Revplus mark is stored at `public/brand/revplus-mark.png`. The design system in `src/app/globals.css` uses the navy, green and white palette from that mark.
 
-## Project structure
+## Consultation form
 
-```
-src/
-  app/                    Routes (App Router). One folder per URL + sitemap/robots/icons/OG image.
-    api/lead/route.ts     Lead endpoint: origin check, size cap, rate limit, validation, honeypot, Resend
-  components/
-    ui/                   Primitives: Button, Card, Section, SectionHeading, Eyebrow, Stat, CheckList, Logo, Icon
-    layout/               Header (mega-menu + mobile drawer) and Footer
-    blocks/               Renderers for the content "blocks" used by every inner page
-    sections/             Home-page sections
-    calculator/           Revenue calculator (client component)
-    forms/                Lead form (client component)
-    seo/                  JSON-LD helper
-  content/                ALL site copy as typed data — edit text here, not in components
-    types.ts              Content model (InnerPage, Block union, HomeContent, …)
-    site.ts               Brand, contact details, route map
-    nav.ts                Header/footer navigation (imports only the light service summaries)
-    services/             One file per service page + summary.ts (nav-safe list) + index.ts
-    home.ts, specialties.ts, payers.ts, departments.ts, payer-collections.ts,
-    resources.ts, calculator.ts, free-audit.ts, services-hub.ts
-  lib/
-    calculator.ts         Pure calculator formula, limits, formatting (unit-tested)
-    lead.ts               Lead model + validation shared by client and server (unit-tested)
-    email.ts              Resend integration + email templates (server-only)
-    rate-limit.ts         In-memory sliding-window limiter
-    seo.ts                Metadata + JSON-LD builders
-docs/reference-audit.md   Full audit of the original site (sections, formula, form, findings)
-reference/                Raw HTML/CSS/JS + screenshots of the original, for comparison
-```
+The server-side lead delivery path is intentionally disabled because the business recipient email has not been confirmed. `POST /api/lead` does not read, store, log or forward the submitted payload; it returns a clear `503` response directing the visitor to the confirmed phone number. No business email address is hard-coded or presented publicly.
 
-### How pages are built
+Before online delivery can be enabled, Revplus must confirm the recipient inbox, approve the delivery service and document the handling expectations for inquiry data. Credentials and recipient addresses must remain server-side.
 
-Every inner page is an `InnerPage` object: a hero, a list of **blocks** (`intro`, `cards`, `steps`, `tiles`, `chips`, `faq`, `band`) and a closing CTA. `components/blocks/render-blocks.tsx` maps each block to a renderer and alternates section backgrounds automatically. Adding a section to a page is a data change; adding a new *kind* of section means adding one renderer.
+GitHub Pages is static and cannot run `POST /api/lead`. In the Pages build, the form validates locally and then clearly says that nothing was sent. Visitors can use the published phone number instead.
 
-Only three components ship JavaScript to the browser: the header, the calculator and the lead form. Everything else is a Server Component. The FAQ accordion uses native `<details name>` (exclusive, keyboard-accessible, zero JS) and metric bars animate with CSS scroll-driven animations.
-
-## Design tokens
-
-Defined once in `src/app/globals.css` under `@theme` (Tailwind v4): brand blues, navy, teal accent, gold, neutrals, radii, tinted shadows, motion easing and keyframes. Fonts: **Cormorant Garamond** (display, 600/700) and **Outfit** (UI/body) via `next/font` with `display: swap`.
-
-## Client preview on GitHub Pages
-
-GitHub Pages only serves static files, so a second build flavour exists for previews:
+## GitHub Pages
 
 ```bash
-NEXT_PUBLIC_BASE_PATH=/health npm run build:pages   # → ./out
+NEXT_PUBLIC_BASE_PATH=/health npm run build:pages
 ```
 
-`scripts/build-pages.mjs` sets `DEPLOY_TARGET=github-pages` (static `output: "export"`, base path, trailing slashes), temporarily excludes the `/api/lead` route (Pages can't run it), and writes `.nojekyll`. In this flavour the lead form validates and then shows a "preview build — nothing was sent" notice, and every page carries `noindex` so the preview never competes with healthbilling.us in search. `.github/workflows/deploy-pages.yml` runs this on every push to `main` and publishes to `https://<owner>.github.io/<repo>/`.
+`scripts/build-pages.mjs` temporarily excludes the API route, creates the static export and adds `.nojekyll`. The workflow in `.github/workflows/deploy-pages.yml` runs tests and publishes `out/` after changes reach `main`.
 
-## Deployment (production)
+## Domain transition
 
-Any Node host works (Vercel, Netlify, Fly, Docker). Set the env variables above, then `npm run build && npm start`. The rate limiter is per-instance; on multi-instance serverless deployments treat it as best-effort and add Upstash/Redis if a global cap is needed.
+The repository does not contain a `CNAME` file. The current production domain is still `https://healthbilling.us`, while the intended public domain is `https://revplusmedsolutions.com`.
 
-Analytics are intentionally not wired. To add GA4 later, set `NEXT_PUBLIC_GA_MEASUREMENT_ID` and render `next/script` tags in `src/app/layout.tsx`.
+Until the new domain resolves and GitHub Pages accepts it, `site.url` intentionally remains `https://healthbilling.us` so canonical URLs, Open Graph URLs, sitemap entries and JSON-LD do not point to an unavailable host. The new domain is displayed as the intended company website through `site.displayDomain`.
+
+When DNS and repository administration are ready:
+
+1. In the repository’s **Settings → Pages**, set the custom domain to `revplusmedsolutions.com`.
+2. At the DNS provider, add the apex records GitHub documents for Pages and add `www` as a CNAME to `codingghost06.github.io` if `www` will be used.
+3. Wait for GitHub’s DNS check to pass, then enable **Enforce HTTPS**.
+4. Verify both apex and `www` behavior in a browser.
+5. Change `site.url` in `src/content/site.ts` to `https://revplusmedsolutions.com`, rebuild and confirm canonical URLs, sitemap, robots, Open Graph and JSON-LD.
+6. Plan any redirect from the old domain only after the new site is healthy.
+
+DNS values should be checked against the current official GitHub Pages documentation at cutover time.
+
+## Content rules
+
+- Do not add customer counts, performance percentages, testimonials, case studies, awards or certifications without evidence and approval.
+- Have qualified counsel review the website privacy notice and website terms before the public launch; the included pages accurately describe the current implementation but are not a substitute for legal advice.
+- “HIPAA-compliant” may be used for the confirmed workflows; do not describe HIPAA as a certification.
+- Payer names are informational context and do not imply partnership or endorsement.
+- Do not publish a business email until it is confirmed.
+- Keep the calculator framed as a user-controlled scenario, never a forecast or guarantee.
