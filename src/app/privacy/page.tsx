@@ -21,8 +21,8 @@ const sections = [
   {
     title: "How inquiry information is used",
     body: [
-      "Information submitted through a configured form is used to review and respond to the inquiry, understand the requested service and maintain related business records. Service providers used for website hosting or email delivery may process information only as part of providing those functions.",
-      "The GitHub Pages preview cannot send form submissions. When that static version is active, the form clearly asks visitors to call instead.",
+      "Information submitted through the consultation form is used to review and respond to the inquiry, understand the requested service and maintain related business records. Service providers used for website hosting or form delivery may process information as part of providing those functions.",
+      "Consultation requests are transmitted through Web3Forms. Do not use this general inquiry form to send patient information, medical records or other protected health information.",
     ],
   },
   {
@@ -49,7 +49,7 @@ export default function PrivacyPage() {
         lead="A plain-language overview of the information this public website may receive and how consultation inquiries are handled."
       />
       <Section size="narrow">
-        <p className="text-sm font-semibold uppercase tracking-[0.14em] text-brand-700">Last updated September 19, 2026</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.14em] text-brand-700">Last updated September 20, 2026</p>
         <div className="mt-8 grid gap-10">
           {sections.map((section) => (
             <section key={section.title} aria-labelledby={section.title.replaceAll(" ", "-").toLowerCase()}>

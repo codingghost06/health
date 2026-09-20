@@ -7,11 +7,9 @@ import { freeAuditPage } from "@/content/free-audit";
 import { site } from "@/content/site";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
+import { buildWeb3FormsPayload, WEB3FORMS_ENDPOINT } from "@/lib/web3forms";
 
-type Status = "idle" | "submitting" | "success" | "error" | "preview";
-
-/** Static preview builds (GitHub Pages) have no server, so the form can't send. */
-const IS_PREVIEW = process.env.NEXT_PUBLIC_DEPLOY_TARGET === "github-pages";
+type Status = "idle" | "submitting" | "success" | "error";
 
 const f = freeAuditPage.form;
 
@@ -96,52 +94,27 @@ export function LeadForm() {
       return;
     }
     setErrors({});
-    if (IS_PREVIEW) {
-      setStatus("preview");
-      return;
-    }
     setStatus("submitting");
     setServerMessage("");
     try {
-      const res = await fetch("/api/lead", {
+      const res = await fetch(WEB3FORMS_ENDPOINT, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(parsed.data),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(buildWeb3FormsPayload(parsed.data)),
       });
-      const json = (await res.json().catch(() => ({}))) as { ok?: boolean; message?: string; errors?: LeadFieldErrors };
-      if (res.ok && json.ok) {
+      const json = (await res.json().catch(() => ({}))) as { success?: boolean; message?: string };
+      if (res.ok && json.success) {
         setStatus("success");
         formRef.current?.reset();
         return;
       }
-      if (json.errors) setErrors(json.errors);
-      setServerMessage(json.message || "Something went wrong. Please try again.");
+      setServerMessage(json.message || "We could not send your request. Please try again.");
       setStatus("error");
     } catch {
       setServerMessage("Network error. Please check your connection and try again.");
       setStatus("error");
     }
   };
-
-  if (status === "preview") {
-    return (
-      <div role="status" className="rounded-2xl border border-gold-400/50 bg-gold-300/15 p-8 text-center sm:p-10">
-        <span className="mx-auto flex size-14 items-center justify-center rounded-full bg-white text-gold-500 shadow-card">
-          <Icon name="eye" className="size-7" strokeWidth={2} />
-        </span>
-        <h3 className="mt-5 font-display text-[1.75rem] text-navy-900">Preview build — nothing was sent</h3>
-        <p className="mx-auto mt-2 max-w-md text-[15px] leading-relaxed text-slate-600">
-          Your details validated correctly, but GitHub Pages cannot send this form because it has no server endpoint.
-          Please call <a href={site.phone.href} className="font-semibold text-navy-900 underline">{site.phone.display}</a> to contact Revplus.
-        </p>
-        <div className="mt-6">
-          <Button variant="link" onClick={() => setStatus("idle")}>
-            Back to the form
-          </Button>
-        </div>
-      </div>
-    );
-  }
 
   if (status === "success") {
     return (
@@ -250,26 +223,13 @@ export function LeadForm() {
         </p>
       ) : null}
 
-      {IS_PREVIEW ? (
-        <p className="flex items-start gap-2 rounded-md border border-brand-200 bg-brand-50 px-4 py-3 text-[13.5px] leading-relaxed text-slate-700">
-          <Icon name="alert" className="mt-0.5 size-4 shrink-0 text-brand-700" strokeWidth={2.2} />
-          <span>
-            This GitHub Pages preview can validate the fields but cannot transmit them. Call{" "}
-            <a href={site.phone.href} className="font-semibold text-brand-700 underline">{site.phone.display}</a>{" "}
-            to contact Revplus.
-          </span>
-        </p>
-      ) : null}
-
       <Button type="submit" size="lg" className="w-full" disabled={submitting} arrow={!submitting}>
         {submitting ? (
           <span className="inline-flex items-center gap-2">
             <span className="size-4 animate-spin rounded-full border-2 border-white/40 border-t-white" aria-hidden="true" />
             Sending…
           </span>
-        ) : (
-          IS_PREVIEW ? "Validate Request Details" : f.submit
-        )}
+        ) : f.submit}
       </Button>
       <p className="text-center text-[13px] text-slate-500">{f.footnote}</p>
     </form>
