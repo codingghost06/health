@@ -30,11 +30,11 @@ The official Revplus mark is stored at `public/brand/revplus-mark.png`. The desi
 
 ## Consultation form
 
-The server-side lead delivery path is intentionally disabled because the business recipient email has not been confirmed. `POST /api/lead` does not read, store, log or forward the submitted payload; it returns a clear `503` response directing the visitor to the confirmed phone number. No business email address is hard-coded or presented publicly.
+The browser form submits directly to Web3Forms through `src/lib/web3forms.ts`, which keeps the approved public form identifier, subject and payload mapping in one testable place. This works in the static GitHub Pages build without a server route. The form preserves entered values when delivery fails and always offers the confirmed phone number as a fallback.
 
-Before online delivery can be enabled, Revplus must confirm the recipient inbox, approve the delivery service and document the handling expectations for inquiry data. Credentials and recipient addresses must remain server-side.
+The Web3Forms access key is designed to be public in frontend code; it is not an email credential or server secret. Do not add private API keys, email credentials or a business recipient address to the client bundle. The business email remains unconfirmed and is not shown publicly.
 
-GitHub Pages is static and cannot run `POST /api/lead`. In the Pages build, the form validates locally and then clearly says that nothing was sent. Visitors can use the published phone number instead.
+The legacy `POST /api/lead` route remains disabled and is not used by the current form. Consultation submissions must not include patient names, records or other protected health information.
 
 ## GitHub Pages
 
