@@ -13,7 +13,7 @@ export const home: HomeContent = {
     stats: [
       { value: "HIPAA", label: "Compliant workflows" },
       { value: "Houston", label: "Texas-based company" },
-      { value: "8", label: "Core service areas" },
+      { value: "9", label: "Core service areas" },
       { value: "US", label: "Primary market focus" },
     ],
   },

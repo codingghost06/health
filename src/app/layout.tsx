@@ -15,8 +15,13 @@ export const metadata: Metadata = {
   description: site.description,
   applicationName: site.name,
   authors: [{ name: site.name }],
+  // icons: {
+  //   apple: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/brand/revplus-mark.png`,
+  // },
   icons: {
-    apple: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/brand/revplus-mark.png`,
+  icon: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/icon.svg`,
+  shortcut: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/icon.svg`,
+  apple: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/brand/revplus-mark.png`,
   },
   // Static preview builds (GitHub Pages) must not be indexed; the real domain is canonical.
   robots:
